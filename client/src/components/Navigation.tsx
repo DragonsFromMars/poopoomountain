@@ -32,6 +32,18 @@ export function Navigation() {
                 Home
               </Button>
             </Link>
+            <Link href="/legend">
+              <Button
+                variant={location === "/legend" ? "default" : "ghost"}
+                className={`font-bold ${
+                  location === "/legend" 
+                    ? "bg-amber-600 hover:bg-amber-700 text-white" 
+                    : "text-amber-700 hover:text-amber-900 hover:bg-amber-100"
+                }`}
+              >
+                The Legend
+              </Button>
+            </Link>
             <Link href="/how-to-play">
               <Button
                 variant={location === "/how-to-play" ? "default" : "ghost"}
