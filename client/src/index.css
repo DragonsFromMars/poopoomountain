@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(40, 69%, 95%);
+  --foreground: hsl(30, 51%, 22%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(40, 69%, 95%);
+  --popover-foreground: hsl(30, 51%, 22%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(30, 51%, 22%);
+  --border: hsl(30, 20%, 85%);
+  --input: hsl(30, 20%, 85%);
+  --primary: hsl(30, 51%, 22%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(40, 69%, 95%);
+  --secondary-foreground: hsl(30, 51%, 22%);
+  --accent: hsl(35, 42%, 58%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(30, 51%, 22%);
+  --radius: 0.5rem;
+  
+  /* Custom Poo Poo Mountain colors */
+  --beige: hsl(40, 69%, 95%);
+  --poop: hsl(30, 51%, 22%);
+  --poop-accent: hsl(35, 42%, 58%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-bangers {
+    font-family: 'Bangers', cursive;
+  }
+  
+  .bg-beige {
+    background-color: var(--beige);
+  }
+  
+  .text-poop {
+    color: var(--poop);
+  }
+  
+  .bg-poop {
+    background-color: var(--poop);
+  }
+  
+  .hover\:bg-poopAccent:hover {
+    background-color: var(--poop-accent);
+  }
+  
+  .bg-poopAccent {
+    background-color: var(--poop-accent);
+  }
+  
+  .border-poopAccent {
+    border-color: var(--poop-accent);
+  }
+  
+  .focus\:border-poopAccent:focus {
+    border-color: var(--poop-accent);
+  }
+  
+  .from-poopAccent {
+    --tw-gradient-from: var(--poop-accent) var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(184 140 76 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+}
