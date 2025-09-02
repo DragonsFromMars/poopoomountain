@@ -5,14 +5,14 @@ export function Navigation() {
   const [location] = useLocation();
 
   return (
-    <nav className="bg-[#3D2B1F] text-white p-4 sticky top-0 z-50 shadow-md">
+    <nav className="bg-amber-100 text-white p-4 sticky top-0 z-50 shadow-md border-b-4 border-[#3D2B1F]"></nav>
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
               <span className="text-2xl">💩</span>
-              <span className="text-xl font-bold text-amber-900 font-['Bangers'] hidden sm:block">
+              <span className="text-xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
                 Poo Poo Mountain
               </span>
             </div>
@@ -25,8 +25,8 @@ export function Navigation() {
                 variant={location === "/" ? "default" : "ghost"}
                 className={`font-bold ${
                   location === "/" 
-                    ? "bg-amber-600 hover:bg-amber-700 text-white" 
-                    : "text-amber-700 hover:text-amber-900 hover:bg-amber-100"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 }`}
               >
                 Home
@@ -37,8 +37,8 @@ export function Navigation() {
                 variant={location === "/legend" ? "default" : "ghost"}
                 className={`font-bold ${
                   location === "/legend" 
-                    ? "bg-amber-600 hover:bg-amber-700 text-white" 
-                    : "text-amber-700 hover:text-amber-900 hover:bg-amber-100"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 }`}
               >
                 The Legend
@@ -49,8 +49,8 @@ export function Navigation() {
                 variant={location === "/how-to-play" ? "default" : "ghost"}
                 className={`font-bold ${
                   location === "/how-to-play" 
-                    ? "bg-amber-600 hover:bg-amber-700 text-white" 
-                    : "text-amber-700 hover:text-amber-900 hover:bg-amber-100"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 }`}
               >
                 How to Play

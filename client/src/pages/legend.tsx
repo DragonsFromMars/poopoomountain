@@ -103,7 +103,13 @@ export default function Legend() {
                   </p>
                 </div>
               </div>
-              <EmailSignupForm />
+              <div className="mt-12 pt-8 border-t-2 border-amber-300">
+                <EmailSignupForm 
+                  source="legend-page" 
+                  title="💩 Join the Legend!" 
+                  buttonText="Become a Legend! 🏔️"
+                />
+              </div>
             </CardContent>
           </Card>
         </div>
