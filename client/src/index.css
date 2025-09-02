@@ -25,10 +25,11 @@
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
   --ring: hsl(30, 51%, 22%);
   --radius: 0.5rem;
-  
+
   /* Custom Poo Poo Mountain colors */
   --beige: hsl(40, 69%, 95%);
   --poop: hsl(30, 51%, 22%);
+  --dark-brown: #3D2B1F;
   --poop-accent: hsl(35, 42%, 58%);
 }
 
@@ -69,35 +70,35 @@
   .font-bangers {
     font-family: 'Bangers', cursive;
   }
-  
+
   .bg-beige {
     background-color: var(--beige);
   }
-  
+
   .text-poop {
     color: var(--poop);
   }
-  
+
   .bg-poop {
     background-color: var(--poop);
   }
-  
+
   .hover\:bg-poopAccent:hover {
     background-color: var(--poop-accent);
   }
-  
+
   .bg-poopAccent {
     background-color: var(--poop-accent);
   }
-  
+
   .border-poopAccent {
     border-color: var(--poop-accent);
   }
-  
+
   .focus\:border-poopAccent:focus {
     border-color: var(--poop-accent);
   }
-  
+
   .from-poopAccent {
     --tw-gradient-from: var(--poop-accent) var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(184 140 76 / 0) var(--tw-gradient-to-position);

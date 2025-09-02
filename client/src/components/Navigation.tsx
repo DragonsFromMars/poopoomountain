@@ -5,7 +5,7 @@ export function Navigation() {
   const [location] = useLocation();
 
   return (
-    <nav className="bg-white/95 backdrop-blur-sm border-b-4 border-amber-300 sticky top-0 z-50">
+    <nav className="bg-[#3D2B1F] text-white p-4 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

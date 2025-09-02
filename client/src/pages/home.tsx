@@ -15,7 +15,7 @@ const emailSchema = z.object({
 
 type EmailFormData = z.infer<typeof emailSchema>;
 
-function EmailSignupForm({ source, title, buttonText }: { source: string; title: string; buttonText: string }) {
+export function EmailSignupForm({ source, title, buttonText }: { source: string; title: string; buttonText: string }) {
   const { toast } = useToast();
   const [isSuccess, setIsSuccess] = useState(false);
 

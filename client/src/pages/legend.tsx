@@ -1,5 +1,6 @@
-
 import { Card, CardContent } from "@/components/ui/card";
+import { useToast } from "@/hooks/use-toast";
+import { EmailSignupForm } from "./home";
 
 export default function Legend() {
   return (
@@ -28,7 +29,7 @@ export default function Legend() {
                 <p className="text-gray-800">
                   Long ago, at the Coachella music festival in California, a young man named Mr. Poo wandered into the night in search of a humble porta potty. The desert was quiet, the crowd asleep, but inside that plastic chamber he encountered something that would change his life forever:
                 </p>
-                
+
                 <p className="text-gray-700 text-base">
                   很久以前，在美國加州的科切拉音樂祭上，有一位名叫 噗先生 的年輕人，夜裡獨自尋找一間簡陋的流動廁所。沙漠一片寂靜，人群已熟睡，但在那塑膠小屋裡，他遇到了一個徹底改變人生的景象：
                 </p>
@@ -50,7 +51,7 @@ export default function Legend() {
                 <p className="text-gray-800">
                   It rose before him like a monument of mystery — a staggering heap of humanity, piled so high it seemed to touch the stars. Mr. Poo froze, struck by two questions that haunt us to this day:
                 </p>
-                
+
                 <p className="text-gray-700 text-base">
                   它像一座神秘的紀念碑般聳立眼前──龐大的人類產物堆疊得如此高，好似直達星空。噗先生愣住了，心中浮現兩個至今仍未解開的問題：
                 </p>
@@ -80,7 +81,7 @@ export default function Legend() {
                 <p className="text-gray-800">
                   Years later, Mr. Poo shared this strange tale with students in Taiwan. To his surprise, their laughter and fascination gave the story new life. He realized this legend deserved to be more than a campfire joke — it should live on for children, families, and poo lovers everywhere.
                 </p>
-                
+
                 <p className="text-gray-700 text-base">
                   多年之後，噗先生將這個奇妙的故事分享給台灣的學生。沒想到，他們的笑聲與著迷讓傳說重獲新生。他這才明白，這不該只是個營火笑話──它應該延續下去，讓孩子、家庭，甚至世界各地的 噗迷 都能傳頌。
                 </p>
@@ -88,7 +89,7 @@ export default function Legend() {
                 <p className="text-gray-800">
                   And so, one morning, while doing what he does best, inspiration struck. Poo Poo Mountain, the game, was born.
                 </p>
-                
+
                 <p className="text-gray-700 text-base">
                   於是有一天早晨，當他做著自己最擅長的事時，靈感降臨了。桌遊《噗噗山》就此誕生。
                 </p>
@@ -102,6 +103,7 @@ export default function Legend() {
                   </p>
                 </div>
               </div>
+              <EmailSignupForm />
             </CardContent>
           </Card>
         </div>

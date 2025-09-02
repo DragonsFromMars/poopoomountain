@@ -63,7 +63,7 @@ export default function HowToPlayPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-6xl">
-        
+
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-amber-900 mb-6 font-['Bangers']">
@@ -139,7 +139,7 @@ export default function HowToPlayPage() {
           <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-12 text-center font-['Bangers']">
             🃏 Card Guide
           </h2>
-          
+
           <div className="space-y-8">
             {/* Occupied Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
