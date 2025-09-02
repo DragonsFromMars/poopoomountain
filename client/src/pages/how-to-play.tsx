@@ -144,9 +144,9 @@ export default function HowToPlayPage() {
             {/* Occupied Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Occupied Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/occupied-12 cards.png" alt="Occupied Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Occupied Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽 Occupied</h3>
@@ -164,9 +164,9 @@ export default function HowToPlayPage() {
                   <p className="text-amber-700 text-lg mb-2">Target any poo toilet (yours or an opponent's).</p>
                   <p className="text-amber-600"><strong>Flip it back to clean.</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Cleaner Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Cleaner-4 cards.png" alt="Cleaner Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Cleaner Card</p>
                 </div>
               </div>
             </div>
@@ -174,9 +174,9 @@ export default function HowToPlayPage() {
             {/* Plumber Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Plumber Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plumber Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Plumber Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🔧 Plumber</h3>
@@ -194,9 +194,9 @@ export default function HowToPlayPage() {
                   <p className="text-amber-700 mb-2"><strong>ALL</strong> of their poo toilets are instantly cleaned back to fresh.</p>
                   <p className="text-amber-600"><strong>The ultimate reset button!</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Flush the Leader Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Flush The Leader-3 cards.png" alt="Flush the Leader Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Flush the Leader Card</p>
                 </div>
               </div>
             </div>
@@ -204,9 +204,9 @@ export default function HowToPlayPage() {
             {/* Golden Poo Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Golden Poo Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/GoldenPoo-1 card.png" alt="Golden Poo Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Golden Poo Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🟡 Golden Poo</h3>
@@ -225,9 +225,9 @@ export default function HowToPlayPage() {
                   <p className="text-amber-700 text-lg mb-2">Place it on one of your poo toilets.</p>
                   <p className="text-green-700"><strong>Permanent protection—can't ever be cleaned or stolen.</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Toxic Poo Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Toxic Poo-1 card.png" alt="Toxic Poo Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Toxic Poo Card</p>
                 </div>
               </div>
             </div>
@@ -235,9 +235,9 @@ export default function HowToPlayPage() {
             {/* Risky Flush Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Risky Flush Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Risky Flush-3 cards.png" alt="Risky Flush Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Risky Flush Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽💥 Risky Flush</h3>
@@ -256,9 +256,9 @@ export default function HowToPlayPage() {
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🪠 Plunger Heist</h3>
                   <p className="text-amber-700 text-lg">Steal a random card from another player's hand <strong>OR</strong> steal their active Golden Poo.</p>
                 </div>
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Plunger Heist Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plunger Heist Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Plunger Heist Card</p>
                 </div>
               </div>
             </div>
@@ -266,9 +266,9 @@ export default function HowToPlayPage() {
             {/* No Toilet Paper Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">No Toilet Paper Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/NoToiletPaper-3 cards.png" alt="No Toilet Paper Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">No Toilet Paper Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🧻 No Toilet Paper</h3>
@@ -286,9 +286,9 @@ export default function HowToPlayPage() {
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🌮 Taco Tuesday</h3>
                   <p className="text-amber-700 text-lg"><strong>Flip two of your clean toilets into poo toilets at once!</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Taco Tuesday Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Taco Twosday-3 cards.png" alt="Taco Tuesday Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Taco Tuesday Card</p>
                 </div>
               </div>
             </div>
@@ -296,9 +296,9 @@ export default function HowToPlayPage() {
             {/* Sewer Backup Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-dashed border-amber-500 rounded-lg p-6 text-center">
-                  <p className="text-amber-700 font-bold">[PHOTO HERE]</p>
-                  <p className="text-sm text-amber-600">Sewer Backup Card</p>
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
+                  <img src="/uploads/how-to-play/Sewer Backup-3 cards.png" alt="Sewer Backup Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                  <p className="text-sm text-amber-600 font-bold">Sewer Backup Card</p>
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🌊 Sewer Backup</h3>

@@ -27,9 +27,10 @@ export function Navigation() {
                   location === "/" 
                     ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
-                }`}
+                } flex flex-col items-center py-1 h-auto`}
               >
-                Home
+                <span className="font-['Bangers'] text-sm">Home</span>
+                <span className="text-xs font-normal">首頁</span>
               </Button>
             </Link>
             <Link href="/legend">
@@ -39,9 +40,10 @@ export function Navigation() {
                   location === "/legend" 
                     ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
-                }`}
+                } flex flex-col items-center py-1 h-auto`}
               >
-                The Legend
+                <span className="font-['Bangers'] text-sm">The Legend</span>
+                <span className="text-xs font-normal">傳說</span>
               </Button>
             </Link>
             <Link href="/how-to-play">
@@ -51,9 +53,10 @@ export function Navigation() {
                   location === "/how-to-play" 
                     ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
-                }`}
+                } flex flex-col items-center py-1 h-auto`}
               >
-                How to Play
+                <span className="font-['Bangers'] text-sm">How to Play</span>
+                <span className="text-xs font-normal">玩法</span>
               </Button>
             </Link>
           </div>
