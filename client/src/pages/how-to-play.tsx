@@ -66,12 +66,19 @@ export default function HowToPlayPage() {
 
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-amber-900 mb-6 font-['Bangers']">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-amber-900 mb-2 font-['Bangers']">
             💩 How to Play Poo Poo Mountain
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl text-amber-700 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-amber-900 mb-6 font-['Bangers']">
+            💩 如何玩噗噗山
+          </h2>
+          <p className="text-lg sm:text-xl lg:text-2xl text-amber-700 max-w-3xl mx-auto mb-2">
             Welcome to the ultimate bathroom showdown.<br />
             Your goal: be the first to turn all your clean toilets into mighty Poo Poo Mountains!
+          </p>
+          <p className="text-base sm:text-lg lg:text-xl text-amber-700 max-w-3xl mx-auto">
+            歡迎來到終極廁所大對決。<br />
+            你的目標：成為第一個將所有乾淨馬桶變成噗噗山的玩家！
           </p>
         </div>
 
@@ -79,11 +86,17 @@ export default function HowToPlayPage() {
         <div className="mb-16 lg:mb-20">
           <div className="bg-amber-200 border-4 border-dashed border-amber-600 rounded-xl p-8 lg:p-16 text-center">
             <div className="bg-amber-300 rounded-lg p-8 lg:p-12">
-              <h2 className="text-2xl lg:text-4xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              <h2 className="text-2xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
                 🎬 [HOW TO PLAY VIDEO HERE]
               </h2>
-              <p className="text-amber-700 text-lg">
+              <h3 className="text-xl lg:text-2xl font-bold text-amber-900 mb-4 font-['Bangers']">
+                🎬 [遊戲教學影片]
+              </h3>
+              <p className="text-amber-700 text-lg mb-1">
                 Coming soon: Watch the hilarious tutorial video!
+              </p>
+              <p className="text-amber-700 text-base">
+                即將推出：觀看爆笑教學影片！
               </p>
             </div>
           </div>
@@ -92,40 +105,64 @@ export default function HowToPlayPage() {
         {/* Game Info Section */}
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-16">
           <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
-            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers'] flex items-center">
+            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               👥 Players
             </h3>
-            <p className="text-amber-700 text-lg">2–4 players</p>
-            <p className="text-amber-700">Ages: anyone who laughs at bathroom jokes</p>
-            <p className="text-amber-700">Play time: 15–25 minutes</p>
+            <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              👥 玩家人數
+            </h4>
+            <p className="text-amber-700 text-lg mb-1">2–4 players</p>
+            <p className="text-amber-700 text-sm mb-2">2–4 位玩家</p>
+            <p className="text-amber-700 mb-1">Ages: anyone who laughs at bathroom jokes</p>
+            <p className="text-amber-700 text-sm mb-2">年齡：任何會對廁所笑話發笑的人</p>
+            <p className="text-amber-700 mb-1">Play time: 15–25 minutes</p>
+            <p className="text-amber-700 text-sm">遊戲時間：15–25 分鐘</p>
           </div>
 
           <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
-            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers'] flex items-center">
+            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               🎲 Setup
             </h3>
-            <p className="text-amber-700">Each player gets 4 clean toilet cards. Place them in front of you.</p>
-            <p className="text-amber-700 mt-2">Shuffle the deck and deal 4 cards to each player.</p>
-            <p className="text-amber-700 mt-2">Put the rest in the middle as the draw pile.</p>
+            <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              🎲 遊戲設置
+            </h4>
+            <p className="text-amber-700 mb-1">Each player gets 4 clean toilet cards. Place them in front of you.</p>
+            <p className="text-amber-700 text-sm mb-2">每位玩家獲得 4 張乾淨馬桶卡片。將它們放在面前。</p>
+            <p className="text-amber-700 mb-1">Shuffle the deck and deal 4 cards to each player.</p>
+            <p className="text-amber-700 text-sm mb-2">洗牌並發給每位玩家 4 張卡片。</p>
+            <p className="text-amber-700 mb-1">Put the rest in the middle as the draw pile.</p>
+            <p className="text-amber-700 text-sm">將剩餘卡片放在中間作為抽牌堆。</p>
           </div>
 
           <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
-            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers'] flex items-center">
+            <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               🚽 On Your Turn
             </h3>
-            <p className="text-amber-700"><strong>1.</strong> Draw 1 card.</p>
-            <p className="text-amber-700 mt-1"><strong>2.</strong> Play 1 card. (Or do nothing if you can't.)</p>
-            <p className="text-amber-700 mt-1"><strong>3.</strong> End your turn.</p>
+            <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              🚽 你的回合
+            </h4>
+            <p className="text-amber-700 mb-1"><strong>1.</strong> Draw 1 card.</p>
+            <p className="text-amber-700 text-sm mb-2"><strong>1.</strong> 抽取 1 張卡片。</p>
+            <p className="text-amber-700 mb-1"><strong>2.</strong> Play 1 card. (Or do nothing if you can't.)</p>
+            <p className="text-amber-700 text-sm mb-2"><strong>2.</strong> 打出 1 張卡片。（如果無法打出則跳過。）</p>
+            <p className="text-amber-700 mb-1"><strong>3.</strong> End your turn.</p>
+            <p className="text-amber-700 text-sm"><strong>3.</strong> 結束你的回合。</p>
           </div>
         </div>
 
         {/* Winning Section */}
         <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-amber-400 text-center">
-          <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-4 font-['Bangers']">
+          <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
             🏆 Winning
           </h3>
-          <p className="text-xl lg:text-2xl text-amber-800">
+          <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
+            🏆 獲勝條件
+          </h4>
+          <p className="text-xl lg:text-2xl text-amber-800 mb-2">
             The first player to turn all 4 toilets into poo is crowned the <strong>Toilet Champion!</strong> 👑💩
+          </p>
+          <p className="text-lg lg:text-xl text-amber-800">
+            第一位將所有 4 個馬桶變成噗噗的玩家將被封為<strong>廁所冠軍！</strong> 👑💩
           </p>
         </div>
 
@@ -136,22 +173,28 @@ export default function HowToPlayPage() {
 
         {/* Card Guide Section */}
         <div className="mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-12 text-center font-['Bangers']">
+          <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-2 text-center font-['Bangers']">
             🃏 Card Guide
           </h2>
+          <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-12 text-center font-['Bangers']">
+            🃏 卡片指南
+          </h3>
 
           <div className="space-y-8">
             {/* Occupied Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/occupied-12 cards.png" alt="Occupied Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/occupied-12 cards.png" alt="Occupied Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Occupied Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽 Occupied</h3>
-                  <p className="text-amber-700 text-lg mb-2">Flip one of your clean toilets into a poo toilet.</p>
-                  <p className="text-amber-600"><strong>This is how you build your Poo Poo Mountain.</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🚽 Occupied</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽 使用中</h4>
+                  <p className="text-amber-700 text-lg mb-1">Flip one of your clean toilets into a poo toilet.</p>
+                  <p className="text-amber-700 text-sm mb-2">將你的一個乾淨馬桶翻轉成噗噗馬桶。</p>
+                  <p className="text-amber-600 mb-1"><strong>This is how you build your Poo Poo Mountain.</strong></p>
+                  <p className="text-amber-600 text-sm"><strong>這就是建造噗噗山的方法。</strong></p>
                 </div>
               </div>
             </div>
@@ -160,12 +203,15 @@ export default function HowToPlayPage() {
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🧹 Cleaner</h3>
-                  <p className="text-amber-700 text-lg mb-2">Target any poo toilet (yours or an opponent's).</p>
-                  <p className="text-amber-600"><strong>Flip it back to clean.</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🧹 Cleaner</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🧹 清潔工</h4>
+                  <p className="text-amber-700 text-lg mb-1">Target any poo toilet (yours or an opponent's).</p>
+                  <p className="text-amber-700 text-sm mb-2">選擇任何噗噗馬桶（你的或對手的）。</p>
+                  <p className="text-amber-600 mb-1"><strong>Flip it back to clean.</strong></p>
+                  <p className="text-amber-600 text-sm"><strong>將它翻轉回乾淨狀態。</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Cleaner-4 cards.png" alt="Cleaner Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Cleaner-4 cards.png" alt="Cleaner Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Cleaner Card</p>
                 </div>
               </div>
@@ -174,13 +220,15 @@ export default function HowToPlayPage() {
             {/* Plumber Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plumber Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plumber Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Plumber Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🔧 Plumber</h3>
-                  <p className="text-amber-700 text-lg mb-2">Same as Cleaner: flip a poo toilet back to clean.</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🔧 Plumber</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🔧 水管工</h4>
+                  <p className="text-amber-700 text-lg mb-1">Same as Cleaner: flip a poo toilet back to clean.</p>
+                  <p className="text-amber-700 text-sm mb-2">與清潔工相同：將噗噗馬桶翻轉回乾淨狀態。</p>
                 </div>
               </div>
             </div>
@@ -189,13 +237,17 @@ export default function HowToPlayPage() {
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">💥 Flush the Leader</h3>
-                  <p className="text-amber-700 text-lg mb-2">Choose the player with the most poo toilets.</p>
-                  <p className="text-amber-700 mb-2"><strong>ALL</strong> of their poo toilets are instantly cleaned back to fresh.</p>
-                  <p className="text-amber-600"><strong>The ultimate reset button!</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">💥 Flush the Leader</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">💥 沖掉領先者</h4>
+                  <p className="text-amber-700 text-lg mb-1">Choose the player with the most poo toilets.</p>
+                  <p className="text-amber-700 text-sm mb-2">選擇擁有最多噗噗馬桶的玩家。</p>
+                  <p className="text-amber-700 mb-1"><strong>ALL</strong> of their poo toilets are instantly cleaned back to fresh.</p>
+                  <p className="text-amber-700 text-sm mb-2"><strong>所有</strong>他們的噗噗馬桶立即被清潔回新鮮狀態。</p>
+                  <p className="text-amber-600 mb-1"><strong>The ultimate reset button!</strong></p>
+                  <p className="text-amber-600 text-sm"><strong>終極重置按鈕！</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Flush The Leader-3 cards.png" alt="Flush the Leader Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Flush The Leader-3 cards.png" alt="Flush the Leader Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Flush the Leader Card</p>
                 </div>
               </div>
@@ -204,15 +256,19 @@ export default function HowToPlayPage() {
             {/* Golden Poo Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/GoldenPoo-1 card.png" alt="Golden Poo Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/GoldenPoo-1 card.png" alt="Golden Poo Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Golden Poo Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🟡 Golden Poo</h3>
-                  <p className="text-amber-700 text-lg mb-2">Place it on one of your poo toilets.</p>
-                  <p className="text-amber-700 mb-2"><strong>Protects that toilet from being cleaned.</strong></p>
-                  <p className="text-red-600"><strong>Warning: can be stolen by Plunger Heist.</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🟡 Golden Poo</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🟡 黃金噗噗</h4>
+                  <p className="text-amber-700 text-lg mb-1">Place it on one of your poo toilets.</p>
+                  <p className="text-amber-700 text-sm mb-2">將它放在你的一個噗噗馬桶上。</p>
+                  <p className="text-amber-700 mb-1"><strong>Protects that toilet from being cleaned.</strong></p>
+                  <p className="text-amber-700 text-sm mb-2"><strong>保護該馬桶免於被清潔。</strong></p>
+                  <p className="text-red-600 mb-1"><strong>Warning: can be stolen by Plunger Heist.</strong></p>
+                  <p className="text-red-600 text-sm"><strong>警告：可能被通馬桶搶劫偷走。</strong></p>
                 </div>
               </div>
             </div>
@@ -221,12 +277,15 @@ export default function HowToPlayPage() {
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">☣️ Toxic Poo</h3>
-                  <p className="text-amber-700 text-lg mb-2">Place it on one of your poo toilets.</p>
-                  <p className="text-green-700"><strong>Permanent protection—can't ever be cleaned or stolen.</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">☣️ Toxic Poo</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">☣️ 有毒噗噗</h4>
+                  <p className="text-amber-700 text-lg mb-1">Place it on one of your poo toilets.</p>
+                  <p className="text-amber-700 text-sm mb-2">將它放在你的一個噗噗馬桶上。</p>
+                  <p className="text-green-700 mb-1"><strong>Permanent protection—can't ever be cleaned or stolen.</strong></p>
+                  <p className="text-green-700 text-sm"><strong>永久保護——永遠不能被清潔或偷走。</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Toxic Poo-1 card.png" alt="Toxic Poo Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Toxic Poo-1 card.png" alt="Toxic Poo Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Toxic Poo Card</p>
                 </div>
               </div>
@@ -235,16 +294,21 @@ export default function HowToPlayPage() {
             {/* Risky Flush Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Risky Flush-3 cards.png" alt="Risky Flush Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Risky Flush-3 cards.png" alt="Risky Flush Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Risky Flush Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽💥 Risky Flush</h3>
-                  <p className="text-amber-700 text-lg mb-2">Can only be played if you already have at least one poo toilet.</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🚽💥 Risky Flush</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🚽💥 危險沖水</h4>
+                  <p className="text-amber-700 text-lg mb-1">Can only be played if you already have at least one poo toilet.</p>
+                  <p className="text-amber-700 text-sm mb-2">只有在你已經有至少一個噗噗馬桶時才能使用。</p>
                   <p className="text-amber-700 mb-1"><strong>Draw 1 card:</strong></p>
+                  <p className="text-amber-700 text-sm mb-2"><strong>抽取 1 張卡片：</strong></p>
                   <p className="text-red-600 mb-1">If it's Cleaner or Flush the Leader → you must use it on yourself immediately.</p>
-                  <p className="text-green-600">Otherwise → play it right away or keep it.</p>
+                  <p className="text-red-600 text-sm mb-2">如果是清潔工或沖掉領先者 → 你必須立即對自己使用。</p>
+                  <p className="text-green-600 mb-1">Otherwise → play it right away or keep it.</p>
+                  <p className="text-green-600 text-sm">否則 → 立即使用或保留。</p>
                 </div>
               </div>
             </div>
@@ -253,11 +317,13 @@ export default function HowToPlayPage() {
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🪠 Plunger Heist</h3>
-                  <p className="text-amber-700 text-lg">Steal a random card from another player's hand <strong>OR</strong> steal their active Golden Poo.</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🪠 Plunger Heist</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🪠 通馬桶搶劫</h4>
+                  <p className="text-amber-700 text-lg mb-1">Steal a random card from another player's hand <strong>OR</strong> steal their active Golden Poo.</p>
+                  <p className="text-amber-700 text-sm">從其他玩家手中隨機偷取一張卡片<strong>或者</strong>偷走他們正在使用的黃金噗噗。</p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plunger Heist Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Plunger-3 cards.png" alt="Plunger Heist Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Plunger Heist Card</p>
                 </div>
               </div>
@@ -266,15 +332,19 @@ export default function HowToPlayPage() {
             {/* No Toilet Paper Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/NoToiletPaper-3 cards.png" alt="No Toilet Paper Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/NoToiletPaper-3 cards.png" alt="No Toilet Paper Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">No Toilet Paper Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🧻 No Toilet Paper</h3>
-                  <p className="text-amber-700 text-lg mb-2">Pick one player.</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🧻 No Toilet Paper</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🧻 沒有衛生紙</h4>
+                  <p className="text-amber-700 text-lg mb-1">Pick one player.</p>
+                  <p className="text-amber-700 text-sm mb-2">選擇一位玩家。</p>
                   <p className="text-red-600 mb-1">On their next turn, they cannot flip a clean toilet to poo.</p>
-                  <p className="text-amber-600">They can still attack or defend.</p>
+                  <p className="text-red-600 text-sm mb-2">在他們的下一回合，無法將乾淨馬桶翻轉成噗噗。</p>
+                  <p className="text-amber-600 mb-1">They can still attack or defend.</p>
+                  <p className="text-amber-600 text-sm">他們仍然可以攻擊或防禦。</p>
                 </div>
               </div>
             </div>
@@ -283,11 +353,13 @@ export default function HowToPlayPage() {
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🌮 Taco Tuesday</h3>
-                  <p className="text-amber-700 text-lg"><strong>Flip two of your clean toilets into poo toilets at once!</strong></p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🌮 Taco Tuesday</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🌮 墨西哥餅星期二</h4>
+                  <p className="text-amber-700 text-lg mb-1"><strong>Flip two of your clean toilets into poo toilets at once!</strong></p>
+                  <p className="text-amber-700 text-sm"><strong>一次將你的兩個乾淨馬桶翻轉成噗噗馬桶！</strong></p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Taco Twosday-3 cards.png" alt="Taco Tuesday Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Taco Twosday-3 cards.png" alt="Taco Tuesday Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Taco Tuesday Card</p>
                 </div>
               </div>
@@ -296,13 +368,15 @@ export default function HowToPlayPage() {
             {/* Sewer Backup Card */}
             <div className="bg-white rounded-xl p-6 lg:p-8 shadow-lg border-4 border-amber-300">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center overflow-hidden">
-                  <img src="/uploads/how-to-play/Sewer Backup-3 cards.png" alt="Sewer Backup Card" className="w-full h-32 object-cover rounded-md mb-2" />
+                <div className="bg-amber-200 border-2 border-amber-500 rounded-lg p-2 text-center">
+                  <img src="/uploads/how-to-play/Sewer Backup-3 cards.png" alt="Sewer Backup Card" className="w-full h-32 object-contain rounded-md mb-2" />
                   <p className="text-sm text-amber-600 font-bold">Sewer Backup Card</p>
                 </div>
                 <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-3 font-['Bangers']">🌊 Sewer Backup</h3>
-                  <p className="text-amber-700 text-lg">For the next round, no one can flip toilets to poo <strong>OR</strong> clean them.</p>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">🌊 Sewer Backup</h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">🌊 下水道堵塞</h4>
+                  <p className="text-amber-700 text-lg mb-1">For the next round, no one can flip toilets to poo <strong>OR</strong> clean them.</p>
+                  <p className="text-amber-700 text-sm">在下一輪中，沒有人可以將馬桶翻轉成噗噗<strong>或者</strong>清潔它們。</p>
                 </div>
               </div>
             </div>
@@ -316,42 +390,64 @@ export default function HowToPlayPage() {
 
         {/* Pro Tips Section */}
         <div className="bg-gradient-to-r from-orange-200 to-red-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-orange-400">
-          <h3 className="text-3xl lg:text-4xl font-bold text-orange-900 mb-6 text-center font-['Bangers']">
+          <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 text-center font-['Bangers']">
             🔥 Pro Tips
           </h3>
+          <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-6 text-center font-['Bangers']">
+            🔥 專業技巧
+          </h4>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <p className="text-orange-800 text-lg mb-3">💡 <strong>Defend your poo!</strong> Use Golden or Toxic Poo wisely.</p>
-              <p className="text-orange-800 text-lg mb-3">🎯 <strong>Don't forget sabotage</strong>—sometimes stopping the leader is better than building.</p>
+              <p className="text-orange-800 text-lg mb-1">💡 <strong>Defend your poo!</strong> Use Golden or Toxic Poo wisely.</p>
+              <p className="text-orange-800 text-sm mb-3">💡 <strong>保護你的噗噗！</strong> 明智地使用黃金或有毒噗噗。</p>
+              <p className="text-orange-800 text-lg mb-1">🎯 <strong>Don't forget sabotage</strong>—sometimes stopping the leader is better than building.</p>
+              <p className="text-orange-800 text-sm mb-3">🎯 <strong>別忘了破壞</strong>——有時阻止領先者比建設更重要。</p>
             </div>
             <div>
-              <p className="text-orange-800 text-lg mb-3">🌮 <strong>Save Taco Tuesday</strong> for a big comeback.</p>
-              <p className="text-orange-800 text-lg mb-3">😂 <strong>Remember:</strong> it's okay to laugh at your own poo jokes.</p>
+              <p className="text-orange-800 text-lg mb-1">🌮 <strong>Save Taco Tuesday</strong> for a big comeback.</p>
+              <p className="text-orange-800 text-sm mb-3">🌮 <strong>保留墨西哥餅星期二</strong>用於大逆轉。</p>
+              <p className="text-orange-800 text-lg mb-1">😂 <strong>Remember:</strong> it's okay to laugh at your own poo jokes.</p>
+              <p className="text-orange-800 text-sm mb-3">😂 <strong>記住：</strong>對自己的噗噗笑話發笑是可以的。</p>
             </div>
           </div>
         </div>
 
         {/* Final Message */}
         <div className="bg-gradient-to-r from-purple-200 to-pink-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-purple-400 text-center">
-          <h3 className="text-3xl lg:text-4xl font-bold text-purple-900 mb-4 font-['Bangers']">
+          <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
             ⚡ Ready to Play?
           </h3>
-          <p className="text-xl lg:text-2xl text-purple-800 mb-4">
+          <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
+            ⚡ 準備好開始遊戲了嗎？
+          </h4>
+          <p className="text-xl lg:text-2xl text-purple-800 mb-2">
             Poo Poo Mountain is quick, chaotic, and full of toilet drama.
           </p>
-          <p className="text-xl lg:text-2xl text-purple-800">
+          <p className="text-lg lg:text-xl text-purple-800 mb-4">
+            噗噗山快速、混亂，充滿廁所戲劇性。
+          </p>
+          <p className="text-xl lg:text-2xl text-purple-800 mb-1">
             Will you climb to the top… or get flushed away?
+          </p>
+          <p className="text-lg lg:text-xl text-purple-800">
+            你會爬上頂峰……還是被沖走？
           </p>
         </div>
 
         {/* Email Signup Section */}
         <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-300">
           <div className="text-center mb-8">
-            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-4 font-['Bangers']">
+            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
               💩 Join the Poo Poo Mountain Squad!
             </h3>
-            <p className="text-lg lg:text-xl text-amber-700">
+            <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              💩 加入噗噗山小隊！
+            </h4>
+            <p className="text-lg lg:text-xl text-amber-700 mb-1">
               Get notified when the game launches and receive exclusive updates!
+            </p>
+            <p className="text-base lg:text-lg text-amber-700">
+              在遊戲發布時獲得通知並接收獨家更新！
             </p>
           </div>
 

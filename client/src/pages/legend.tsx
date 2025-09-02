@@ -20,8 +20,8 @@ export default function Legend() {
               </div>
 
               {/* Picture placeholder */}
-              <div className="w-full h-64 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center mb-8 overflow-hidden">
-                <img src="/uploads/legend/Legend 1.png" alt="Poo Poo Mountain at Coachella" className="w-full h-full object-cover rounded-lg" />
+              <div className="w-full h-64 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center mb-8 p-2">
+                <img src="/uploads/legend/Legend 1.png" alt="Poo Poo Mountain at Coachella" className="w-full h-full object-contain rounded-lg" />
               </div>
 
               {/* Story content */}
@@ -44,8 +44,8 @@ export default function Legend() {
                 </div>
 
                 {/* Second picture placeholder */}
-                <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center my-8 overflow-hidden">
-                  <img src="/uploads/legend/Legend 2.png" alt="The mysterious Poo Poo Mountain" className="w-full h-full object-cover rounded-lg" />
+                <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center my-8 p-2">
+                  <img src="/uploads/legend/Legend 2.png" alt="The mysterious Poo Poo Mountain" className="w-full h-full object-contain rounded-lg" />
                 </div>
 
                 <p className="text-gray-800">
@@ -79,8 +79,8 @@ export default function Legend() {
                 </p>
 
                 {/* Third legend image */}
-                <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center my-8 overflow-hidden">
-                  <img src="/uploads/legend/legend 3.png" alt="The birth of the legend" className="w-full h-full object-cover rounded-lg" />
+                <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg flex items-center justify-center my-8 p-2">
+                  <img src="/uploads/legend/legend 3.png" alt="The birth of the legend" className="w-full h-full object-contain rounded-lg" />
                 </div>
 
                 <p className="text-gray-800">
