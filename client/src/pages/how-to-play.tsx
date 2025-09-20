@@ -710,11 +710,16 @@ export default function HowToPlayPage() {
             <div className="text-center py-8">
               <div className="text-6xl mb-4">🎉</div>
               <h3 className="text-2xl font-bold text-green-700 mb-2">
-                Welcome to the squad!
+                🎉 Welcome to the Poo Poo Mountain family!
+              </h3>
+              <p className="text-green-600 mb-2">
+                When the chaos begins, we'll notify you right away!
+              </p>
+              <h3 className="text-2xl font-bold text-green-700 mb-2">
+                🎉 歡迎加入《噗噗山》大家庭！
               </h3>
               <p className="text-green-600">
-                You'll be the first to know when Poo Poo Mountain is ready to
-                play!
+                混亂開始時，我們會第一時間通知你！
               </p>
             </div>
           ) : (
