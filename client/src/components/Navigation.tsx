@@ -98,7 +98,7 @@ export function Navigation() {
               className="text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 p-2"
             >
               <svg
-                className="w-6 h-6"
+                className="w-8 h-8"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
