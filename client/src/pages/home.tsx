@@ -195,9 +195,21 @@ export default function Home() {
     <div className="bg-beige text-poop font-sans">
       {/* Hero Section */}
       <section className="text-center px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bangers mb-4 sm:mb-6 text-[#3D2B1F]">
-          💩 Poo Poo Mountain is Coming!
-        </h1>
+        <div className="flex items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
+          <img 
+            src="/poo-victory.png" 
+            alt="Poo Character Victory Pose" 
+            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
+          />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bangers text-[#3D2B1F]">
+            Poo Poo Mountain is Coming!
+          </h1>
+          <img 
+            src="/poo-victory.png" 
+            alt="Poo Character Victory Pose" 
+            className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
+          />
+        </div>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-poop max-w-4xl mx-auto leading-relaxed">
           The funniest card game for kids (and weird adults). Watch the trailer
           and sign up below for early bird chaos.
