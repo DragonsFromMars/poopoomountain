@@ -97,7 +97,7 @@ export default function HowToPlayPage() {
 
         {/* Game Info Section */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
-          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
             <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               👥 Players
             </h3>
@@ -116,7 +116,7 @@ export default function HowToPlayPage() {
             <p className="text-amber-700 text-sm">遊戲時間：15–25 分鐘</p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
             <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               🎲 Setup
             </h3>
@@ -143,7 +143,7 @@ export default function HowToPlayPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F] md:col-span-2">
+          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900 md:col-span-2">
             <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               🚽 On Your Turn
             </h3>
@@ -172,7 +172,7 @@ export default function HowToPlayPage() {
         </div>
 
         {/* Winning Section */}
-        <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-[#3D2B1F] text-center">
+        <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-amber-900 text-center">
           <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
             🏆 Winning
           </h3>
@@ -205,9 +205,9 @@ export default function HowToPlayPage() {
 
           <div className="space-y-8">
             {/* Occupied Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/occupied-12 cards.png"
                     alt="Occupied Card"
@@ -243,7 +243,7 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Cleaner Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
@@ -265,7 +265,7 @@ export default function HowToPlayPage() {
                     <strong>將它翻轉回乾淨狀態。</strong>
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Cleaner-4 cards.png"
                     alt="Cleaner Card"
@@ -279,9 +279,9 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Plumber Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Plunger-3 cards.png"
                     alt="Plumber Card"
@@ -309,7 +309,7 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Flush the Leader Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
@@ -338,7 +338,7 @@ export default function HowToPlayPage() {
                     <strong>終極重置按鈕！</strong>
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Flush The Leader-3 cards.png"
                     alt="Flush the Leader Card"
@@ -352,9 +352,9 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Golden Poo Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/GoldenPoo-1 card.png"
                     alt="Golden Poo Card"
@@ -394,7 +394,7 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Toxic Poo Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
@@ -418,7 +418,7 @@ export default function HowToPlayPage() {
                     <strong>永久保護——永遠不能被清潔或偷走。</strong>
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Toxic Poo-1 card.png"
                     alt="Toxic Poo Card"
@@ -432,9 +432,9 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Risky Flush Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Risky Flush-3 cards.png"
                     alt="Risky Flush Card"
@@ -482,7 +482,7 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Plunger Heist Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
@@ -500,7 +500,7 @@ export default function HowToPlayPage() {
                     偷走他們正在使用的黃金噗噗。
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Plunger-3 cards.png"
                     alt="Plunger Heist Card"
@@ -514,9 +514,9 @@ export default function HowToPlayPage() {
             </div>
 
             {/* No Toilet Paper Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/NoToiletPaper-3 cards.png"
                     alt="No Toilet Paper Card"
@@ -554,7 +554,7 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Taco Tuesday Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
@@ -572,7 +572,7 @@ export default function HowToPlayPage() {
                     <strong>一次將你的兩個乾淨馬桶翻轉成噗噗馬桶！</strong>
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Taco Twosday-3 cards.png"
                     alt="Taco Tuesday Card"
@@ -586,9 +586,9 @@ export default function HowToPlayPage() {
             </div>
 
             {/* Sewer Backup Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-[#3D2B1F] rounded-lg p-2 text-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
                     src="/uploads/how-to-play/Sewer Backup-3 cards.png"
                     alt="Sewer Backup Card"
@@ -690,7 +690,7 @@ export default function HowToPlayPage() {
         </div>
 
         {/* Email Signup Section */}
-        <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-[#3D2B1F]">
+        <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
           <div className="text-center mb-8">
             <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
               💩 Join the Poo Poo Mountain Squad!
@@ -733,7 +733,7 @@ export default function HowToPlayPage() {
                           <Input
                             placeholder="your.email@example.com"
                             {...field}
-                            className="text-lg p-6 border-2 border-[#3D2B1F] focus:border-[#3D2B1F]"
+                            className="text-lg p-6 border-2 border-amber-900 focus:border-amber-900"
                           />
                         </FormControl>
                         <FormMessage />
