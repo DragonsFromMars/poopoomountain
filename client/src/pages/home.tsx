@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -190,6 +190,15 @@ export default function Home() {
       side: "right",
     },
   ];
+
+  // Handle hash navigation on page load
+  useEffect(() => {
+    if (window.location.hash === '#journey') {
+      setTimeout(() => {
+        document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  }, []);
 
   return (
     <div className="bg-beige text-poop font-sans">
