@@ -124,8 +124,8 @@ export default function HowToPlayPage() {
             <p className="text-amber-700 text-sm mb-2">
               年齡：任何會對廁所笑話發笑的人
             </p>
-            <p className="text-amber-700 mb-1">Play time: 15–25 minutes</p>
-            <p className="text-amber-700 text-sm">遊戲時間：15–25 分鐘</p>
+            <p className="text-amber-700 mb-1">Play time: 10–25 minutes</p>
+            <p className="text-amber-700 text-sm">遊戲時間：10–25 分鐘</p>
           </div>
 
           <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
