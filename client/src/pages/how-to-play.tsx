@@ -710,9 +710,13 @@ export default function HowToPlayPage() {
         {/* End Card Guide */}
         </div>
 
-        {/* Plunger Divider */}
+        {/* Poo Professor Divider */}
         <div className="text-center mb-16">
-          <div className="text-6xl">🪠💩🚽💩🪠</div>
+          <img 
+            src="/poo-professor.png" 
+            alt="Poo Professor" 
+            className="mx-auto w-32 h-32 sm:w-40 sm:h-40 object-contain"
+          />
         </div>
 
         {/* Pro Tips Section */}
