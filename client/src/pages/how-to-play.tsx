@@ -226,22 +226,16 @@ export default function HowToPlayPage() {
           {/* Toilet Cards Subsection */}
           <div className="mb-16">
             <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
-              🚽 Toilet Cards
+              🚽 Toilet Cards (flip cards)
             </h3>
             <h4 className="text-xl lg:text-2xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
-              馬桶卡片
+              馬桶卡片（翻轉卡）
             </h4>
             
             <div className="space-y-8">
               {/* Toilet Flip Card */}
               <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
-                    🚽 Toilet Cards (Flip Card)
-                  </h3>
-                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    馬桶卡片（翻轉卡）
-                  </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Each player starts with 4 toilet cards. These are double-sided flip cards.
                   </p>
@@ -253,6 +247,9 @@ export default function HowToPlayPage() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                   {/* Side A - Clean */}
                   <div className="text-center flex-1">
+                    <h4 className="text-xl lg:text-2xl font-bold text-amber-900 mb-4 font-['Bangers']">
+                      🚽 Clean Toilet
+                    </h4>
                     <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-4 mb-4">
                       <img
                         src="/uploads/how-to-play/FLIP A-Clean Toilet.png"
@@ -280,6 +277,9 @@ export default function HowToPlayPage() {
 
                   {/* Side B - Poo */}
                   <div className="text-center flex-1">
+                    <h4 className="text-xl lg:text-2xl font-bold text-amber-900 mb-4 font-['Bangers']">
+                      💩 Poo Poo Mountain
+                    </h4>
                     <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-4 mb-4">
                       <img
                         src="/uploads/how-to-play/FLIP B-Poo Poo Mountain.png"
