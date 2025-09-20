@@ -12,7 +12,7 @@ export function Navigation() {
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
               <img 
-                src="/poo-character.png" 
+                src="/poo-character-optimized.webp" 
                 alt="Poo Poo Mountain Character" 
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
               />
@@ -20,7 +20,7 @@ export function Navigation() {
                 Poo Poo Mountain
               </span>
               <img 
-                src="/toilet-man.png" 
+                src="/toilet-man-optimized.webp" 
                 alt="Toilet Character" 
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
               />
