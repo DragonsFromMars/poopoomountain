@@ -68,7 +68,8 @@ export function Navigation() {
                 <span className="text-xs sm:text-sm lg:text-base font-normal">傳說</span>
               </Button>
             </Link>
-            <button
+            <Button
+              variant="ghost"
               onClick={() => {
                 if (location !== "/") {
                   // Navigate to home page with scroll parameter (SPA navigation, no reload)
@@ -80,11 +81,11 @@ export function Navigation() {
                   history.replaceState(null, "", "#journey");
                 }
               }}
-              className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto px-3 rounded-md transition-colors"
+              className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto"
             >
               <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Road Map</span>
               <span className="text-xs sm:text-sm lg:text-base font-normal">路線圖</span>
-            </button>
+            </Button>
           </div>
         </div>
       </div>
