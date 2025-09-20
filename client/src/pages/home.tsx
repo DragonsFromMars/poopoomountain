@@ -52,8 +52,8 @@ export function EmailSignupForm({
       if (data.success) {
         setIsSuccess(true);
         toast({
-          title: "Success!",
-          description: data.message,
+          title: "Success! 💩",
+          description: "🎉 Welcome to the Poo Poo Mountain family! When the chaos begins, we'll notify you right away! 🎉 歡迎加入《噗噗山》大家庭！混亂開始時，我們會第一時間通知你！",
         });
       } else {
         toast({
