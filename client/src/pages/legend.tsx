@@ -21,7 +21,7 @@ export default function Legend() {
 
               {/* Picture placeholder */}
               <div className="w-full h-64 bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden mb-8">
-                <img src="/uploads/legend/Legend 1.png" alt="Poo Poo Mountain at Coachella" className="w-full h-full object-cover" />
+                <img src="/uploads/legend/Legend 1.png" alt="Poo Poo Mountain at Coachella" className="w-full h-full object-contain" />
               </div>
 
               {/* Story content */}
@@ -45,7 +45,7 @@ export default function Legend() {
 
                 {/* Second picture placeholder */}
                 <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
-                  <img src="/uploads/legend/Legend 2.png" alt="The mysterious Poo Poo Mountain" className="w-full h-full object-cover" />
+                  <img src="/uploads/legend/Legend 2.png" alt="The mysterious Poo Poo Mountain" className="w-full h-full object-contain" />
                 </div>
 
                 <p className="text-gray-800">
@@ -80,7 +80,7 @@ export default function Legend() {
 
                 {/* Third legend image */}
                 <div className="w-full h-48 bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
-                  <img src="/uploads/legend/legend 3.png" alt="The birth of the legend" className="w-full h-full object-cover" />
+                  <img src="/uploads/legend/legend 3.png" alt="The birth of the legend" className="w-full h-full object-contain" />
                 </div>
 
                 <p className="text-gray-800">
