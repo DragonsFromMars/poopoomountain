@@ -11,7 +11,7 @@ export default function Legend() {
             <CardContent className="p-8">
               {/* Title */}
               <div className="text-center mb-8">
-                <h1 className="text-4xl md:text-5xl font-bold text-amber-900 font-['Bangers'] mb-2">
+                <h1 className="text-4xl md:text-5xl font-bold text-[#3D2B1F] font-['Bangers'] mb-2">
                   The Legend of Poo Poo Mountain
                 </h1>
                 <h2 className="text-2xl md:text-3xl text-amber-700 font-['Bangers']">
@@ -21,17 +21,26 @@ export default function Legend() {
 
               {/* Picture placeholder */}
               <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden mb-8">
-                <img src="/uploads/legend/Legend 1.png" alt="Poo Poo Mountain at Coachella" className="w-full h-auto object-contain" />
+                <img
+                  src="/uploads/legend/Legend 1.png"
+                  alt="Poo Poo Mountain at Coachella"
+                  className="w-full h-auto object-contain"
+                />
               </div>
 
               {/* Story content */}
               <div className="space-y-6 text-lg leading-relaxed">
                 <p className="text-gray-800">
-                  Long ago, at the Coachella music festival in California, a young man named Mr. Poo wandered into the night in search of a humble porta potty. The desert was quiet, the crowd asleep, but inside that plastic chamber he encountered something that would change his life forever:
+                  Long ago, at the Coachella music festival in California, a
+                  young man named Mr. Poo wandered into the night in search of a
+                  humble porta potty. The desert was quiet, the crowd asleep,
+                  but inside that plastic chamber he encountered something that
+                  would change his life forever:
                 </p>
 
                 <p className="text-gray-700 text-base">
-                  很久以前，在美國加州的科切拉音樂祭上，有一位名叫 噗先生 的年輕人，夜裡獨自尋找一間簡陋的流動廁所。沙漠一片寂靜，人群已熟睡，但在那塑膠小屋裡，他遇到了一個徹底改變人生的景象：
+                  很久以前，在美國加州的科切拉音樂祭上，有一位名叫 噗先生
+                  的年輕人，夜裡獨自尋找一間簡陋的流動廁所。沙漠一片寂靜，人群已熟睡，但在那塑膠小屋裡，他遇到了一個徹底改變人生的景象：
                 </p>
 
                 <div className="text-center my-8">
@@ -45,11 +54,18 @@ export default function Legend() {
 
                 {/* Second picture placeholder */}
                 <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
-                  <img src="/uploads/legend/Legend 2.png" alt="The mysterious Poo Poo Mountain" className="w-full h-auto object-contain" />
+                  <img
+                    src="/uploads/legend/Legend 2.png"
+                    alt="The mysterious Poo Poo Mountain"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
 
                 <p className="text-gray-800">
-                  It rose before him like a monument of mystery — a staggering heap of humanity, piled so high it seemed to touch the stars. Mr. Poo froze, struck by two questions that haunt us to this day:
+                  It rose before him like a monument of mystery — a staggering
+                  heap of humanity, piled so high it seemed to touch the stars.
+                  Mr. Poo froze, struck by two questions that haunt us to this
+                  day:
                 </p>
 
                 <p className="text-gray-700 text-base">
@@ -58,10 +74,12 @@ export default function Legend() {
 
                 <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-400 my-6">
                   <p className="text-gray-800 mb-2">
-                    Did the last brave soul cling to the plastic walls and somehow add to the summit?
+                    Did the last brave soul cling to the plastic walls and
+                    somehow add to the summit?
                   </p>
                   <p className="text-gray-800 mb-4">
-                    Or… was this not of human origin at all, but the work of some otherworldly being?
+                    Or… was this not of human origin at all, but the work of
+                    some otherworldly being?
                   </p>
                   <p className="text-gray-700 text-base mb-2">
                     最後那位勇者，是否緊抓著塑膠牆壁，努力把自己的傑作堆到頂端？
@@ -80,19 +98,29 @@ export default function Legend() {
 
                 {/* Third legend image */}
                 <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
-                  <img src="/uploads/legend/legend 3.png" alt="The birth of the legend" className="w-full h-auto object-contain" />
+                  <img
+                    src="/uploads/legend/legend 3.png"
+                    alt="The birth of the legend"
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
 
                 <p className="text-gray-800">
-                  Years later, Mr. Poo shared this strange tale with students in Taiwan. To his surprise, their laughter and fascination gave the story new life. He realized this legend deserved to be more than a campfire joke — it should live on for children, families, and poo lovers everywhere.
+                  Years later, Mr. Poo shared this strange tale with students in
+                  Taiwan. To his surprise, their laughter and fascination gave
+                  the story new life. He realized this legend deserved to be
+                  more than a campfire joke — it should live on for children,
+                  families, and poo lovers everywhere.
                 </p>
 
                 <p className="text-gray-700 text-base">
-                  多年之後，噗先生將這個奇妙的故事分享給台灣的學生。沒想到，他們的笑聲與著迷讓傳說重獲新生。他這才明白，這不該只是個營火笑話──它應該延續下去，讓孩子、家庭，甚至世界各地的 噗迷 都能傳頌。
+                  多年之後，噗先生將這個奇妙的故事分享給台灣的學生。沒想到，他們的笑聲與著迷讓傳說重獲新生。他這才明白，這不該只是個營火笑話──它應該延續下去，讓孩子、家庭，甚至世界各地的
+                  噗迷 都能傳頌。
                 </p>
 
                 <p className="text-gray-800">
-                  And so, one morning, while doing what he does best, inspiration struck. Poo Poo Mountain, the game, was born.
+                  And so, one morning, while doing what he does best,
+                  inspiration struck. Poo Poo Mountain, the game, was born.
                 </p>
 
                 <p className="text-gray-700 text-base">
@@ -101,17 +129,20 @@ export default function Legend() {
 
                 <div className="bg-gradient-to-r from-amber-100 to-orange-100 p-6 rounded-lg border-2 border-amber-300 mt-8">
                   <p className="text-gray-800 font-semibold text-xl mb-2">
-                    Now it is your turn to carry on the legend. Gather your friends and family, and climb the Poo Poo Mountain together — if you dare.
+                    Now it is your turn to carry on the legend. Gather your
+                    friends and family, and climb the Poo Poo Mountain together
+                    — if you dare.
                   </p>
                   <p className="text-gray-700 text-lg">
-                    現在，輪到你來延續這段傳說了。快召集你的親朋好友，一起來挑戰 噗噗山 吧──如果你敢的話！
+                    現在，輪到你來延續這段傳說了。快召集你的親朋好友，一起來挑戰
+                    噗噗山 吧──如果你敢的話！
                   </p>
                 </div>
               </div>
               <div className="mt-12 pt-8 border-t-2 border-amber-300">
-                <EmailSignupForm 
-                  source="legend-page" 
-                  title="💩 Join the Legend!" 
+                <EmailSignupForm
+                  source="legend-page"
+                  title="💩 Join the Legend!"
                   buttonText="Become a Legend! 🏔️"
                 />
               </div>
