@@ -30,8 +30,8 @@ async function sendWelcomeEmail(email: string) {
             <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px;">
               <h1 style="color: #5c3a1a; text-align: center; font-size: 2.5em;">💩 Welcome to Poo Poo Mountain!</h1>
               
-              <p style="color: #5c3a1a; font-size: 1.2em;">Hey there, future card game champion!</p>
-              <p style="color: #7a6b5f; font-size: 1em; margin-bottom: 20px;">嘿，未來的卡牌遊戲冠軍！</p>
+              <p style="color: #5c3a1a; font-size: 1.2em;">🎉 Hey, future Poo Poo Mountain legend!</p>
+              <p style="color: #7a6b5f; font-size: 1em; margin-bottom: 20px;">🎉 嘿，未來的噗噗山傳奇！</p>
               
               <p style="color: #5c3a1a;">Thanks for joining our squad! You'll be the first to know when:</p>
               <p style="color: #7a6b5f; margin-bottom: 15px;">感謝加入我們的隊伍！你將第一時間知道：</p>
@@ -43,14 +43,14 @@ async function sendWelcomeEmail(email: string) {
                 <li>💩 More ridiculous content gets released</li>
               </ul>
               <ul style="color: #7a6b5f; margin-bottom: 20px;">
-                <li>🚀 我們的群眾募資活動開始</li>
-                <li>🎮 遊戲準備好可以玩了</li>
-                <li>🎁 獨家福利和更新發布</li>
-                <li>💩 更多荒謬內容發布</li>
+                <li>🚀 我們的群眾募資活動開跑</li>
+                <li>🎮 遊戲正式開玩</li>
+                <li>🎁 獨家好康與最新消息登場</li>
+                <li>💩 更多爆笑荒謬的內容釋出</li>
               </ul>
               
               <p style="color: #5c3a1a;">Get ready for the funniest card game experience ever created!</p>
-              <p style="color: #7a6b5f; margin-bottom: 20px;">準備好迎接史上最有趣的卡牌遊戲體驗吧！</p>
+              <p style="color: #7a6b5f; margin-bottom: 20px;">準備好迎接史上最爆笑的卡牌遊戲體驗吧！</p>
               
               <div style="text-align: center; margin-top: 30px;">
                 <p style="color: #b88c4c; font-size: 0.9em;">The Poo Poo Mountain Team</p>
