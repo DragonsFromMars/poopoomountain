@@ -229,75 +229,79 @@ export default function HowToPlayPage() {
             </h4>
             
             <div className="space-y-8">
-              {/* Clean Toilet Card */}
+              {/* Toilet Flip Card */}
               <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
-                <div className="grid md:grid-cols-3 gap-6 items-center">
-                  <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                    <img
-                      src="/uploads/how-to-play/FLIP A-Clean Toilet.png"
-                      alt="Clean Toilet Card"
-                      className="w-full h-48 object-contain rounded-md mb-2"
-                    />
-                    <p className="text-sm text-amber-600 font-bold">
-                      Clean Toilet Card
-                    </p>
-                  </div>
-                  <div className="md:col-span-2">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
-                      🚽 Clean Toilet
-                    </h3>
-                    <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                      乾淨馬桶
-                    </h4>
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
+                    🚽 Toilet Cards (Flip Card)
+                  </h3>
+                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
+                    馬桶卡片（翻轉卡）
+                  </h4>
+                  <p className="text-amber-700 text-lg mb-1">
+                    Each player starts with 4 toilet cards. These are double-sided flip cards.
+                  </p>
+                  <p className="text-amber-700 text-sm">
+                    每位玩家開始時有 4 張馬桶卡片。這些是雙面翻轉卡片。
+                  </p>
+                </div>
+                
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                  {/* Side A - Clean */}
+                  <div className="text-center flex-1">
+                    <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-4 mb-4">
+                      <img
+                        src="/uploads/how-to-play/FLIP A-Clean Toilet.png"
+                        alt="Clean Toilet Side"
+                        className="w-full h-48 object-contain rounded-md mb-2"
+                      />
+                      <p className="text-sm text-amber-600 font-bold">
+                        Side A - Clean Toilet
+                      </p>
+                    </div>
                     <p className="text-amber-700 text-lg mb-1">
-                      Each player starts with 4 clean toilet cards placed in front of them.
-                    </p>
-                    <p className="text-amber-700 text-sm mb-2">
-                      每位玩家開始時有 4 張乾淨馬桶卡片放在面前。
-                    </p>
-                    <p className="text-amber-700 mb-1">
-                      <strong>Goal:</strong> Flip these into poo toilets using action cards.
+                      <strong>Starting Side:</strong> All cards begin clean
                     </p>
                     <p className="text-amber-700 text-sm">
-                      <strong>目標：</strong>使用行動卡片將這些翻轉成噗噗馬桶。
+                      <strong>開始面：</strong>所有卡片都從乾淨開始
+                    </p>
+                  </div>
+
+                  {/* Flip Arrow */}
+                  <div className="flex justify-center items-center px-4">
+                    <div className="text-6xl text-amber-600">
+                      🔄
+                    </div>
+                  </div>
+
+                  {/* Side B - Poo */}
+                  <div className="text-center flex-1">
+                    <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-4 mb-4">
+                      <img
+                        src="/uploads/how-to-play/FLIP B-Poo Poo Mountain.png"
+                        alt="Poo Poo Mountain Side"
+                        className="w-full h-48 object-contain rounded-md mb-2"
+                      />
+                      <p className="text-sm text-amber-600 font-bold">
+                        Side B - Poo Poo Mountain
+                      </p>
+                    </div>
+                    <p className="text-green-700 text-lg mb-1">
+                      <strong>Goal Side:</strong> Flip all 4 to win!
+                    </p>
+                    <p className="text-green-700 text-sm">
+                      <strong>目標面：</strong>翻轉全部 4 張即可獲勝！
                     </p>
                   </div>
                 </div>
-              </div>
 
-              {/* Poo Poo Mountain Card */}
-              <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
-                <div className="grid md:grid-cols-3 gap-6 items-center">
-                  <div className="md:col-span-2">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
-                      💩 Poo Poo Mountain
-                    </h3>
-                    <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                      噗噗山
-                    </h4>
-                    <p className="text-amber-700 text-lg mb-1">
-                      When you flip a clean toilet, it becomes a Poo Poo Mountain!
-                    </p>
-                    <p className="text-amber-700 text-sm mb-2">
-                      當你翻轉乾淨馬桶時，它就會變成噗噗山！
-                    </p>
-                    <p className="text-green-700 mb-1">
-                      <strong>Victory condition:</strong> Be the first to turn all 4 toilets into poo!
-                    </p>
-                    <p className="text-green-700 text-sm">
-                      <strong>勝利條件：</strong>成為第一個將所有 4 個馬桶變成噗噗的玩家！
-                    </p>
-                  </div>
-                  <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                    <img
-                      src="/uploads/how-to-play/FLIP B-Poo Poo Mountain.png"
-                      alt="Poo Poo Mountain Card"
-                      className="w-full h-48 object-contain rounded-md mb-2"
-                    />
-                    <p className="text-sm text-amber-600 font-bold">
-                      Poo Poo Mountain Card
-                    </p>
-                  </div>
+                <div className="mt-8 p-4 bg-gradient-to-r from-blue-100 to-green-100 rounded-lg border-2 border-blue-300">
+                  <p className="text-center text-blue-800 text-lg mb-1">
+                    <strong>💡 How to flip:</strong> Use action cards like "Occupied" to flip clean toilets into poo!
+                  </p>
+                  <p className="text-center text-blue-800 text-sm">
+                    <strong>💡 如何翻轉：</strong>使用像「使用中」這樣的行動卡片將乾淨馬桶翻轉成噗噗！
+                  </p>
                 </div>
               </div>
             </div>
