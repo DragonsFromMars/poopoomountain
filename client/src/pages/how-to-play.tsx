@@ -314,7 +314,7 @@ export default function HowToPlayPage() {
             
             <div className="space-y-8">
               {/* Occupied Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
+              <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                   <img
@@ -697,6 +697,9 @@ export default function HowToPlayPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* End Card Guide */}
         </div>
 
         {/* Plunger Divider */}
