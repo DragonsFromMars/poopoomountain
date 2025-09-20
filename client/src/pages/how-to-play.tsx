@@ -175,7 +175,13 @@ export default function HowToPlayPage() {
               打出 1 張卡片。（如果無法打出則跳過。）
             </p>
             <p className="text-amber-700 mb-1">
-              <strong>3.</strong> End your turn.
+              <strong>3.</strong> If you played a card, draw another card to keep 3 cards in hand.
+            </p>
+            <p className="text-amber-700 text-sm mb-3">
+              如果你打出了卡片，再抽一張卡片保持手中有 3 張卡。
+            </p>
+            <p className="text-amber-700 mb-1">
+              <strong>4.</strong> End your turn.
             </p>
             <p className="text-amber-700 text-sm">
               結束你的回合。
