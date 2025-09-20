@@ -292,6 +292,16 @@ export default function HowToPlayPage() {
             {/* Flush the Leader Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                  <img
+                    src="/uploads/how-to-play/Flush The Leader-3 cards.png"
+                    alt="Flush the Leader Card"
+                    className="w-full h-48 object-contain rounded-md mb-2"
+                  />
+                  <p className="text-sm text-amber-600 font-bold">
+                    Flush the Leader Card
+                  </p>
+                </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
                     💥 Flush the Leader
@@ -317,16 +327,6 @@ export default function HowToPlayPage() {
                   </p>
                   <p className="text-amber-600 text-sm">
                     <strong>終極重置按鈕！</strong>
-                  </p>
-                </div>
-                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                  <img
-                    src="/uploads/how-to-play/Flush The Leader-3 cards.png"
-                    alt="Flush the Leader Card"
-                    className="w-full h-48 object-contain rounded-md mb-2"
-                  />
-                  <p className="text-sm text-amber-600 font-bold">
-                    Flush the Leader Card
                   </p>
                 </div>
               </div>
