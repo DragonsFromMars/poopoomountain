@@ -114,7 +114,7 @@ export default function HowToPlayPage() {
               👥 Players
             </h3>
             <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
-              👥 玩家人數
+              玩家人數
             </h4>
             <p className="text-amber-700 text-lg mb-1">2–4 players</p>
             <p className="text-amber-700 text-sm mb-2">2–4 位玩家</p>
@@ -133,7 +133,7 @@ export default function HowToPlayPage() {
               🎲 Setup
             </h3>
             <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
-              🎲 遊戲設置
+              遊戲設置
             </h4>
             <p className="text-amber-700 mb-1">
               Each player gets 4 clean toilet cards. Place them in front of you.
@@ -155,50 +155,50 @@ export default function HowToPlayPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900 md:col-span-2">
+          <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
             <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-2 font-['Bangers'] flex items-center">
               🚽 On Your Turn
             </h3>
             <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
-              🚽 你的回合
+              你的回合
             </h4>
-            <p className="text-amber-700 mb-1">
-              <strong>1.</strong> Draw 1 card.
+            <div className="text-center">
+              <p className="text-amber-700 mb-1">
+                <strong>1.</strong> Draw 1 card.
+              </p>
+              <p className="text-amber-700 text-sm mb-3">
+                抽取 1 張卡片。
+              </p>
+              <p className="text-amber-700 mb-1">
+                <strong>2.</strong> Play 1 card. (Or do nothing if you can't.)
+              </p>
+              <p className="text-amber-700 text-sm mb-3">
+                打出 1 張卡片。（如果無法打出則跳過。）
+              </p>
+              <p className="text-amber-700 mb-1">
+                <strong>3.</strong> End your turn.
+              </p>
+              <p className="text-amber-700 text-sm">
+                結束你的回合。
+              </p>
+            </div>
+          </div>
+          <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900 text-center">
+            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
+              🏆 Winning
+            </h3>
+            <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
+              獲勝條件
+            </h4>
+            <p className="text-xl lg:text-2xl text-amber-800 mb-2">
+              The first player to turn all 4 toilets into poo is crowned the{" "}
+              <strong>Toilet Champion!</strong> 👑💩
             </p>
-            <p className="text-amber-700 text-sm mb-2">
-              <strong>1.</strong> 抽取 1 張卡片。
-            </p>
-            <p className="text-amber-700 mb-1">
-              <strong>2.</strong> Play 1 card. (Or do nothing if you can't.)
-            </p>
-            <p className="text-amber-700 text-sm mb-2">
-              <strong>2.</strong> 打出 1 張卡片。（如果無法打出則跳過。）
-            </p>
-            <p className="text-amber-700 mb-1">
-              <strong>3.</strong> End your turn.
-            </p>
-            <p className="text-amber-700 text-sm">
-              <strong>3.</strong> 結束你的回合。
+            <p className="text-lg lg:text-xl text-amber-800">
+              第一位將所有 4 個馬桶變成噗噗的玩家將被封為
+              <strong>廁所冠軍！</strong> 👑💩
             </p>
           </div>
-        </div>
-
-        {/* Winning Section */}
-        <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 mb-16 border-4 border-amber-900 text-center">
-          <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
-            🏆 Winning
-          </h3>
-          <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
-            🏆 獲勝條件
-          </h4>
-          <p className="text-xl lg:text-2xl text-amber-800 mb-2">
-            The first player to turn all 4 toilets into poo is crowned the{" "}
-            <strong>Toilet Champion!</strong> 👑💩
-          </p>
-          <p className="text-lg lg:text-xl text-amber-800">
-            第一位將所有 4 個馬桶變成噗噗的玩家將被封為
-            <strong>廁所冠軍！</strong> 👑💩
-          </p>
         </div>
 
         {/* Toilet Divider */}
