@@ -162,26 +162,24 @@ export default function HowToPlayPage() {
             <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-4 font-['Bangers']">
               你的回合
             </h4>
-            <div className="text-center">
-              <p className="text-amber-700 mb-1">
-                <strong>1.</strong> Draw 1 card.
-              </p>
-              <p className="text-amber-700 text-sm mb-3">
-                抽取 1 張卡片。
-              </p>
-              <p className="text-amber-700 mb-1">
-                <strong>2.</strong> Play 1 card. (Or do nothing if you can't.)
-              </p>
-              <p className="text-amber-700 text-sm mb-3">
-                打出 1 張卡片。（如果無法打出則跳過。）
-              </p>
-              <p className="text-amber-700 mb-1">
-                <strong>3.</strong> End your turn.
-              </p>
-              <p className="text-amber-700 text-sm">
-                結束你的回合。
-              </p>
-            </div>
+            <p className="text-amber-700 mb-1">
+              <strong>1.</strong> Draw 1 card.
+            </p>
+            <p className="text-amber-700 text-sm mb-3">
+              抽取 1 張卡片。
+            </p>
+            <p className="text-amber-700 mb-1">
+              <strong>2.</strong> Play 1 card. (Or do nothing if you can't.)
+            </p>
+            <p className="text-amber-700 text-sm mb-3">
+              打出 1 張卡片。（如果無法打出則跳過。）
+            </p>
+            <p className="text-amber-700 mb-1">
+              <strong>3.</strong> End your turn.
+            </p>
+            <p className="text-amber-700 text-sm">
+              結束你的回合。
+            </p>
           </div>
           <div className="bg-gradient-to-r from-yellow-200 to-amber-200 rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900 text-center">
             <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
@@ -290,35 +288,6 @@ export default function HowToPlayPage() {
               </div>
             </div>
 
-            {/* Plumber Card */}
-            <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
-              <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                  <img
-                    src="/uploads/how-to-play/Plunger-3 cards.png"
-                    alt="Plumber Card"
-                    className="w-full h-48 object-contain rounded-md mb-2"
-                  />
-                  <p className="text-sm text-amber-600 font-bold">
-                    Plumber Card
-                  </p>
-                </div>
-                <div className="md:col-span-2">
-                  <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
-                    🔧 Plumber
-                  </h3>
-                  <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    水管工
-                  </h4>
-                  <p className="text-amber-700 text-lg mb-1">
-                    Same as Cleaner: flip a poo toilet back to clean.
-                  </p>
-                  <p className="text-amber-700 text-sm mb-2">
-                    與清潔工相同：將噗噗馬桶翻轉回乾淨狀態。
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Flush the Leader Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
