@@ -11,7 +11,11 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
-              <span className="text-3xl sm:text-4xl lg:text-5xl">💩</span>
+              <img 
+                src="/poo-character.png" 
+                alt="Poo Poo Mountain Character" 
+                className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
+              />
               <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
                 Poo Poo Mountain
               </span>
