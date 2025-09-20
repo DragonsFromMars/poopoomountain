@@ -219,8 +219,101 @@ export default function HowToPlayPage() {
             卡片指南
           </h3>
 
-          <div className="space-y-8">
-            {/* Occupied Card */}
+          {/* Toilet Cards Subsection */}
+          <div className="mb-16">
+            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
+              🚽 Toilet Cards
+            </h3>
+            <h4 className="text-xl lg:text-2xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
+              馬桶卡片
+            </h4>
+            
+            <div className="space-y-8">
+              {/* Clean Toilet Card */}
+              <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
+                <div className="grid md:grid-cols-3 gap-6 items-center">
+                  <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                    <img
+                      src="/uploads/how-to-play/FLIP A-Clean Toilet.png"
+                      alt="Clean Toilet Card"
+                      className="w-full h-48 object-contain rounded-md mb-2"
+                    />
+                    <p className="text-sm text-amber-600 font-bold">
+                      Clean Toilet Card
+                    </p>
+                  </div>
+                  <div className="md:col-span-2">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
+                      🚽 Clean Toilet
+                    </h3>
+                    <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
+                      乾淨馬桶
+                    </h4>
+                    <p className="text-amber-700 text-lg mb-1">
+                      Each player starts with 4 clean toilet cards placed in front of them.
+                    </p>
+                    <p className="text-amber-700 text-sm mb-2">
+                      每位玩家開始時有 4 張乾淨馬桶卡片放在面前。
+                    </p>
+                    <p className="text-amber-700 mb-1">
+                      <strong>Goal:</strong> Flip these into poo toilets using action cards.
+                    </p>
+                    <p className="text-amber-700 text-sm">
+                      <strong>目標：</strong>使用行動卡片將這些翻轉成噗噗馬桶。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Poo Poo Mountain Card */}
+              <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
+                <div className="grid md:grid-cols-3 gap-6 items-center">
+                  <div className="md:col-span-2">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
+                      💩 Poo Poo Mountain
+                    </h3>
+                    <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
+                      噗噗山
+                    </h4>
+                    <p className="text-amber-700 text-lg mb-1">
+                      When you flip a clean toilet, it becomes a Poo Poo Mountain!
+                    </p>
+                    <p className="text-amber-700 text-sm mb-2">
+                      當你翻轉乾淨馬桶時，它就會變成噗噗山！
+                    </p>
+                    <p className="text-green-700 mb-1">
+                      <strong>Victory condition:</strong> Be the first to turn all 4 toilets into poo!
+                    </p>
+                    <p className="text-green-700 text-sm">
+                      <strong>勝利條件：</strong>成為第一個將所有 4 個馬桶變成噗噗的玩家！
+                    </p>
+                  </div>
+                  <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                    <img
+                      src="/uploads/how-to-play/FLIP B-Poo Poo Mountain.png"
+                      alt="Poo Poo Mountain Card"
+                      className="w-full h-48 object-contain rounded-md mb-2"
+                    />
+                    <p className="text-sm text-amber-600 font-bold">
+                      Poo Poo Mountain Card
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Action Cards Subsection */}
+          <div className="mb-16">
+            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
+              🎮 Action Cards
+            </h3>
+            <h4 className="text-xl lg:text-2xl font-bold text-amber-900 mb-8 text-center font-['Bangers']">
+              行動卡片
+            </h4>
+            
+            <div className="space-y-8">
+              {/* Occupied Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
                 <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
