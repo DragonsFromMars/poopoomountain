@@ -208,7 +208,7 @@ export default function HowToPlayPage() {
         {/* Character Divider */}
         <div className="text-center mb-16">
           <img 
-            src="/attached_assets/Toilet Man and Poo man back_1758364846381.png" 
+            src="/toilet-poo-characters.png" 
             alt="Toilet Man and Poo Man Characters" 
             className="mx-auto w-64 h-64 sm:w-80 sm:h-80 object-contain"
           />
