@@ -142,10 +142,10 @@ export default function HowToPlayPage() {
               每位玩家獲得 4 張乾淨馬桶卡片。將它們放在面前。
             </p>
             <p className="text-amber-700 mb-1">
-              Shuffle the deck and deal 3 cards to each player.
+              Shuffle the deck and deal 3 action cards to each player.
             </p>
             <p className="text-amber-700 text-sm mb-2">
-              洗牌並發給每位玩家 3 張卡片。
+              洗牌並發給每位玩家 3 張行動卡片。
             </p>
             <p className="text-amber-700 mb-1">
               Put the rest in the middle as the draw pile.
