@@ -366,11 +366,11 @@ export default function Home() {
           最臭名昭著的卡牌遊戲。
         </p>
         <p className="text-xs sm:text-sm mt-4 opacity-70">
-          © 2024 Poo Poo Mountain. All rights reserved. No actual poop
+          © 2025 Poo Poo Mountain. All rights reserved. No actual poop
           involved.
         </p>
         <p className="text-xs sm:text-sm mt-4 opacity-70">
-          © 2024 噗噗山。保留所有權利。不涉及實際的糞便。
+          © 2025 噗噗山。保留所有權利。不涉及實際的糞便。
         </p>
       </footer>
     </div>
