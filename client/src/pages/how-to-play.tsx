@@ -110,8 +110,8 @@ export default function HowToPlayPage() {
         {/* Character Divider */}
         <div className="text-center mb-12">
           <img 
-            src="/toilet-poo-characters.png" 
-            alt="Toilet Man and Poo Man Characters" 
+            src="/poo-professor.png" 
+            alt="Poo Professor" 
             className="mx-auto w-64 h-64 sm:w-80 sm:h-80 object-contain"
           />
         </div>
@@ -711,11 +711,11 @@ export default function HowToPlayPage() {
         {/* End Card Guide */}
         </div>
 
-        {/* Poo Professor Divider */}
+        {/* Toilet and Poo Characters Divider */}
         <div className="text-center mb-16">
           <img 
-            src="/poo-professor.png" 
-            alt="Poo Professor" 
+            src="/toilet-poo-characters.png" 
+            alt="Toilet Man and Poo Man Characters" 
             className="mx-auto w-32 h-32 sm:w-40 sm:h-40 object-contain"
           />
         </div>
