@@ -7,7 +7,7 @@ export default function Legend() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/95 backdrop-blur-sm border-4 border-amber-900 shadow-xl">
+          <Card className="bg-white/95 backdrop-blur-sm border-4 border-amber-300 shadow-xl">
             <CardContent className="p-8">
               {/* Title */}
               <div className="text-center mb-8">
@@ -20,7 +20,7 @@ export default function Legend() {
               </div>
 
               {/* Picture placeholder */}
-              <div className="w-full bg-amber-100 border-2 border-amber-900 rounded-lg overflow-hidden mb-8">
+              <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden mb-8">
                 <img
                   src="/uploads/legend/Legend 1.png"
                   alt="Poo Poo Mountain at Coachella"
@@ -53,7 +53,7 @@ export default function Legend() {
                 </div>
 
                 {/* Second picture placeholder */}
-                <div className="w-full bg-amber-100 border-2 border-amber-900 rounded-lg overflow-hidden my-8">
+                <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
                   <img
                     src="/uploads/legend/Legend 2.png"
                     alt="The mysterious Poo Poo Mountain"
@@ -72,7 +72,7 @@ export default function Legend() {
                   它像一座神秘的紀念碑般聳立眼前──龐大的人類產物堆疊得如此高，好似直達星空。噗先生愣住了，心中浮現兩個至今仍未解開的問題：
                 </p>
 
-                <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-900 my-6">
+                <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-400 my-6">
                   <p className="text-gray-800 mb-2">
                     Did the last brave soul cling to the plastic walls and
                     somehow add to the summit?
@@ -97,7 +97,7 @@ export default function Legend() {
                 </p>
 
                 {/* Third legend image */}
-                <div className="w-full bg-amber-100 border-2 border-amber-900 rounded-lg overflow-hidden my-8">
+                <div className="w-full bg-amber-100 border-2 border-amber-300 rounded-lg overflow-hidden my-8">
                   <img
                     src="/uploads/legend/legend 3.png"
                     alt="The birth of the legend"
@@ -127,7 +127,7 @@ export default function Legend() {
                   於是有一天早晨，當他做著自己最擅長的事時，靈感降臨了。桌遊《噗噗山》就此誕生。
                 </p>
 
-                <div className="bg-gradient-to-r from-amber-100 to-orange-100 p-6 rounded-lg border-2 border-amber-900 mt-8">
+                <div className="bg-gradient-to-r from-amber-100 to-orange-100 p-6 rounded-lg border-2 border-amber-300 mt-8">
                   <p className="text-gray-800 font-semibold text-xl mb-2">
                     Now it is your turn to carry on the legend. Gather your
                     friends and family, and climb the Poo Poo Mountain together
@@ -139,7 +139,7 @@ export default function Legend() {
                   </p>
                 </div>
               </div>
-              <div className="mt-12 pt-8 border-t-2 border-amber-900">
+              <div className="mt-12 pt-8 border-t-2 border-amber-300">
                 <EmailSignupForm
                   source="legend-page"
                   title="💩 Join the Legend!"

@@ -82,8 +82,15 @@ export function EmailSignupForm({
         <div className="text-lg sm:text-xl font-bangers mb-2">
           🎉 Welcome to the Poo Poo Mountain family!
         </div>
-        <p className="text-sm sm:text-base">我們將在混亂開始時通知您。</p>
-        <p className="text-xs sm:text-sm">我們將在混亂開始時通知您。</p>
+        <div className="text-sm sm:text-base mb-2">
+          When the chaos begins, we'll notify you right away!
+        </div>
+        <div className="text-lg sm:text-xl font-bangers mb-2">
+          🎉 歡迎加入《噗噗山》大家庭！
+        </div>
+        <div className="text-xs sm:text-sm">
+          混亂開始時，我們會第一時間通知你！
+        </div>
       </div>
     );
   }

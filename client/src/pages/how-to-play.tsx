@@ -49,7 +49,7 @@ export default function HowToPlayPage() {
     onSuccess: () => {
       toast({
         title: "Success! 💩",
-        description: "You're now part of the Poo Poo Mountain squad!",
+        description: "🎉 Welcome to the Poo Poo Mountain family! When the chaos begins, we'll notify you right away! 🎉 歡迎加入《噗噗山》大家庭！混亂開始時，我們會第一時間通知你！",
         variant: "default",
       });
       setIsSubmitted(true);
