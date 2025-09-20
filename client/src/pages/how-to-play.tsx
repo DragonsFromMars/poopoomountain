@@ -76,11 +76,23 @@ export default function HowToPlayPage() {
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#3D2B1F] mb-2 font-['Bangers']">
-            💩 How to Play Poo Poo Mountain
-          </h1>
+          <div className="flex items-center justify-center gap-4 sm:gap-6 mb-2">
+            <img 
+              src="/poo-man-2.png" 
+              alt="Poo Character" 
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
+            />
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#3D2B1F] font-['Bangers']">
+              How to Play Poo Poo Mountain
+            </h1>
+            <img 
+              src="/drumming-toilet-man.png" 
+              alt="Drumming Toilet Character" 
+              className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
+            />
+          </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl text-amber-900 mb-6 font-['Bangers']">
-            💩 如何玩噗噗山
+            如何玩噗噗山
           </h2>
           <p className="text-lg sm:text-xl lg:text-2xl text-amber-700 max-w-3xl mx-auto mb-2">
             Welcome to the ultimate bathroom showdown.
