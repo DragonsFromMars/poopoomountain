@@ -19,6 +19,11 @@ export function Navigation() {
               <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
                 Poo Poo Mountain
               </span>
+              <img 
+                src="/toilet-man.png" 
+                alt="Toilet Character" 
+                className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
+              />
             </div>
           </Link>
 

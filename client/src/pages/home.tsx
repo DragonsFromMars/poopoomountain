@@ -205,8 +205,8 @@ export default function Home() {
             Poo Poo Mountain is Coming!
           </h1>
           <img 
-            src="/toilet-man.png" 
-            alt="Toilet Character" 
+            src="/victory-toilet-man.png" 
+            alt="Victory Toilet Character" 
             className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
           />
         </div>
