@@ -1,8 +1,8 @@
-import { Link, useLocation } from "wouter";
+import { Link, useLocation, useRoute } from "wouter";
 import { Button } from "@/components/ui/button";
 
 export function Navigation() {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
 
   return (
     <nav className="bg-amber-100 text-white p-4 sticky top-0 z-50 shadow-md border-b-4 border-[#3D2B1F]">
@@ -71,11 +71,13 @@ export function Navigation() {
             <button
               onClick={() => {
                 if (location !== "/") {
-                  // Navigate to home page first, then scroll
-                  window.location.href = "/#journey";
+                  // Navigate to home page with scroll parameter (SPA navigation, no reload)
+                  navigate("/?scroll=journey");
                 } else {
                   // Already on home page, just scroll
                   document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+                  // Update URL for shareable link
+                  history.replaceState(null, "", "#journey");
                 }
               }}
               className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto px-3 rounded-md transition-colors"

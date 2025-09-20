@@ -191,13 +191,34 @@ export default function Home() {
     },
   ];
 
-  // Handle hash navigation on page load
+  // Handle both hash and query parameter navigation
   useEffect(() => {
-    if (window.location.hash === '#journey') {
-      setTimeout(() => {
+    const scrollIfNeeded = () => {
+      const params = new URLSearchParams(window.location.search);
+      if (window.location.hash === '#journey' || params.get('scroll') === 'journey') {
         document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
+        // Clean up query parameter after scrolling
+        if (params.get('scroll') === 'journey') {
+          const url = new URL(window.location.href);
+          url.searchParams.delete('scroll');
+          url.hash = 'journey';
+          history.replaceState(null, "", url.toString());
+        }
+      }
+    };
+    
+    const t = setTimeout(scrollIfNeeded, 0); // next tick after mount
+    const onHashChange = () => setTimeout(scrollIfNeeded, 0);
+    const onPopState = () => setTimeout(scrollIfNeeded, 0);
+    
+    window.addEventListener('hashchange', onHashChange);
+    window.addEventListener('popstate', onPopState);
+    
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener('hashchange', onHashChange);
+      window.removeEventListener('popstate', onPopState);
+    };
   }, []);
 
   return (
