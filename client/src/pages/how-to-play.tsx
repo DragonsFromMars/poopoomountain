@@ -212,7 +212,7 @@ export default function HowToPlayPage() {
             🃏 Card Guide
           </h2>
           <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-12 text-center font-['Bangers']">
-            🃏 卡片指南
+            卡片指南
           </h3>
 
           <div className="space-y-8">
@@ -234,7 +234,7 @@ export default function HowToPlayPage() {
                     🚽 Occupied
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🚽 使用中
+                    使用中
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Flip one of your clean toilets into a poo toilet.
@@ -262,7 +262,7 @@ export default function HowToPlayPage() {
                     🧹 Cleaner
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🧹 清潔工
+                    清潔工
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Target any poo toilet (yours or an opponent's).
@@ -308,7 +308,7 @@ export default function HowToPlayPage() {
                     🔧 Plumber
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🔧 水管工
+                    水管工
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Same as Cleaner: flip a poo toilet back to clean.
@@ -328,7 +328,7 @@ export default function HowToPlayPage() {
                     💥 Flush the Leader
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    💥 沖掉領先者
+                    沖掉領先者
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Choose the player with the most poo toilets.
@@ -381,7 +381,7 @@ export default function HowToPlayPage() {
                     🟡 Golden Poo
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🟡 黃金噗噗
+                    黃金噗噗
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Place it on one of your poo toilets.
@@ -413,7 +413,7 @@ export default function HowToPlayPage() {
                     ☣️ Toxic Poo
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    ☣️ 有毒噗噗
+                    有毒噗噗
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Place it on one of your poo toilets.
@@ -461,7 +461,7 @@ export default function HowToPlayPage() {
                     🚽💥 Risky Flush
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🚽💥 危險沖水
+                    危險沖水
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Can only be played if you already have at least one poo
@@ -501,7 +501,7 @@ export default function HowToPlayPage() {
                     🪠 Plunger Heist
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🪠 通馬桶搶劫
+                    通馬桶搶劫
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Steal a random card from another player's hand{" "}
