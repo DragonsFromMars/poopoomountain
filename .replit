@@ -3,6 +3,7 @@ run = "npm run dev"
 
 [nix]
 channel = "stable-25_05"
+packages = ["imagemagick", "pngquant"]
 
 [deployment]
 run = ["sh", "-c", "npm run dev"]
@@ -16,8 +17,8 @@ localPort = 37821
 externalPort = 3000
 
 [[ports]]
-localPort = 37831
-externalPort = 3001
+localPort = 41827
+externalPort = 3002
 
 [agent]
 expertMode = true
