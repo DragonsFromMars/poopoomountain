@@ -107,6 +107,15 @@ export default function HowToPlayPage() {
           </p>
         </div>
 
+        {/* Character Divider */}
+        <div className="text-center mb-12">
+          <img 
+            src="/toilet-poo-characters.png" 
+            alt="Toilet Man and Poo Man Characters" 
+            className="mx-auto w-64 h-64 sm:w-80 sm:h-80 object-contain"
+          />
+        </div>
+
         {/* Game Info Section */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 mb-16">
           <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
@@ -205,14 +214,6 @@ export default function HowToPlayPage() {
           </div>
         </div>
 
-        {/* Character Divider */}
-        <div className="text-center mb-16">
-          <img 
-            src="/toilet-poo-characters.png" 
-            alt="Toilet Man and Poo Man Characters" 
-            className="mx-auto w-64 h-64 sm:w-80 sm:h-80 object-contain"
-          />
-        </div>
 
         {/* Card Guide Section */}
         <div className="mb-16">
