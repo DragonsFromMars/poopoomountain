@@ -497,16 +497,6 @@ export default function HowToPlayPage() {
             {/* No Toilet Paper Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                  <img
-                    src="/uploads/how-to-play/NoToiletPaper-3 cards.png"
-                    alt="No Toilet Paper Card"
-                    className="w-full h-48 object-contain rounded-md mb-2"
-                  />
-                  <p className="text-sm text-amber-600 font-bold">
-                    No Toilet Paper Card
-                  </p>
-                </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
                     🧻 No Toilet Paper
@@ -531,12 +521,32 @@ export default function HowToPlayPage() {
                     他們仍然可以攻擊或防禦。
                   </p>
                 </div>
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                  <img
+                    src="/uploads/how-to-play/NoToiletPaper-3 cards.png"
+                    alt="No Toilet Paper Card"
+                    className="w-full h-48 object-contain rounded-md mb-2"
+                  />
+                  <p className="text-sm text-amber-600 font-bold">
+                    No Toilet Paper Card
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Taco Tuesday Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                  <img
+                    src="/uploads/how-to-play/Taco Twosday-3 cards.png"
+                    alt="Taco Tuesday Card"
+                    className="w-full h-48 object-contain rounded-md mb-2"
+                  />
+                  <p className="text-sm text-amber-600 font-bold">
+                    Taco Tuesday Card
+                  </p>
+                </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
                     🌮 Taco Tuesday
@@ -553,32 +563,12 @@ export default function HowToPlayPage() {
                     <strong>一次將你的兩個乾淨馬桶翻轉成噗噗馬桶！</strong>
                   </p>
                 </div>
-                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                  <img
-                    src="/uploads/how-to-play/Taco Twosday-3 cards.png"
-                    alt="Taco Tuesday Card"
-                    className="w-full h-48 object-contain rounded-md mb-2"
-                  />
-                  <p className="text-sm text-amber-600 font-bold">
-                    Taco Tuesday Card
-                  </p>
-                </div>
               </div>
             </div>
 
             {/* Sewer Backup Card */}
             <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
               <div className="grid md:grid-cols-3 gap-6 items-center">
-                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
-                  <img
-                    src="/uploads/how-to-play/Sewer Backup-3 cards.png"
-                    alt="Sewer Backup Card"
-                    className="w-full h-48 object-contain rounded-md mb-2"
-                  />
-                  <p className="text-sm text-amber-600 font-bold">
-                    Sewer Backup Card
-                  </p>
-                </div>
                 <div className="md:col-span-2">
                   <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
                     🌊 Sewer Backup
@@ -593,6 +583,16 @@ export default function HowToPlayPage() {
                   <p className="text-amber-700 text-sm">
                     在下一輪中，沒有人可以將馬桶翻轉成噗噗<strong>或者</strong>
                     清潔它們。
+                  </p>
+                </div>
+                <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
+                  <img
+                    src="/uploads/how-to-play/Sewer Backup-3 cards.png"
+                    alt="Sewer Backup Card"
+                    className="w-full h-48 object-contain rounded-md mb-2"
+                  />
+                  <p className="text-sm text-amber-600 font-bold">
+                    Sewer Backup Card
                   </p>
                 </div>
               </div>
