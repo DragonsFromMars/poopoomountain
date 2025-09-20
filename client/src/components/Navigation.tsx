@@ -18,7 +18,7 @@ export function Navigation() {
                 alt="Poo Poo Mountain Character" 
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
               />
-              <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
+              <span className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers']">
                 Poo Poo Mountain
               </span>
               <img 
