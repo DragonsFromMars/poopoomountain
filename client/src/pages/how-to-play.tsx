@@ -205,9 +205,13 @@ export default function HowToPlayPage() {
           </div>
         </div>
 
-        {/* Toilet Divider */}
+        {/* Character Divider */}
         <div className="text-center mb-16">
-          <div className="text-6xl">🚽💩🪠💩🚽</div>
+          <img 
+            src="/attached_assets/Toilet Man and Poo man back_1758364846381.png" 
+            alt="Toilet Man and Poo Man Characters" 
+            className="mx-auto w-64 h-64 sm:w-80 sm:h-80 object-contain"
+          />
         </div>
 
         {/* Card Guide Section */}
