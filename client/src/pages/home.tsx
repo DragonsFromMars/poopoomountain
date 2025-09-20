@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* Launch Timeline Section */}
-      <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-beige">
+      <section id="journey" className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-beige">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bangers text-center mb-12 sm:mb-16 text-[#3D2B1F]">
             🗓️ The Journey to Poo Poo Mountain

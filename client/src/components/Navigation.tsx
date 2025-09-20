@@ -42,6 +42,19 @@ export function Navigation() {
                 <span className="text-xs sm:text-sm lg:text-base font-normal">首頁</span>
               </Button>
             </Link>
+            <Link href="/how-to-play">
+              <Button
+                variant={location === "/how-to-play" ? "default" : "ghost"}
+                className={`font-bold ${
+                  location === "/how-to-play" 
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
+                } flex flex-col items-center py-1 h-auto`}
+              >
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">How to Play</span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">玩法</span>
+              </Button>
+            </Link>
             <Link href="/legend">
               <Button
                 variant={location === "/legend" ? "default" : "ghost"}
@@ -55,17 +68,13 @@ export function Navigation() {
                 <span className="text-xs sm:text-sm lg:text-base font-normal">傳說</span>
               </Button>
             </Link>
-            <Link href="/how-to-play">
+            <Link href="/#journey">
               <Button
-                variant={location === "/how-to-play" ? "default" : "ghost"}
-                className={`font-bold ${
-                  location === "/how-to-play" 
-                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
-                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
-                } flex flex-col items-center py-1 h-auto`}
+                variant="ghost"
+                className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto"
               >
-                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">How to Play</span>
-                <span className="text-xs sm:text-sm lg:text-base font-normal">玩法</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Road Map</span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">路線圖</span>
               </Button>
             </Link>
           </div>
