@@ -11,8 +11,8 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
-              <span className="text-2xl">💩</span>
-              <span className="text-xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
+              <span className="text-3xl sm:text-4xl lg:text-5xl">💩</span>
+              <span className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers'] hidden sm:block">
                 Poo Poo Mountain
               </span>
             </div>
@@ -29,8 +29,8 @@ export function Navigation() {
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 } flex flex-col items-center py-1 h-auto`}
               >
-                <span className="font-['Bangers'] text-sm">Home</span>
-                <span className="text-xs font-normal">首頁</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Home</span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">首頁</span>
               </Button>
             </Link>
             <Link href="/legend">
@@ -42,8 +42,8 @@ export function Navigation() {
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 } flex flex-col items-center py-1 h-auto`}
               >
-                <span className="font-['Bangers'] text-sm">The Legend</span>
-                <span className="text-xs font-normal">傳說</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">The Legend</span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">傳說</span>
               </Button>
             </Link>
             <Link href="/how-to-play">
@@ -55,8 +55,8 @@ export function Navigation() {
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 } flex flex-col items-center py-1 h-auto`}
               >
-                <span className="font-['Bangers'] text-sm">How to Play</span>
-                <span className="text-xs font-normal">玩法</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">How to Play</span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">玩法</span>
               </Button>
             </Link>
           </div>
