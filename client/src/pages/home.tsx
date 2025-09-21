@@ -111,6 +111,19 @@ export function EmailSignupForm({
           : "加入我們的電子郵件名單，獲得免費可列印的著色本、眾籌啟動期間專屬贊助者獎勵，以及最前排觀賞史上最荒謬（也最臭）桌遊的機會。"}
       </p>
 
+      {/* Coloring Book Image - Only show for non-form1 sources */}
+      {source !== "form1" && (
+        <div className="flex justify-center my-6 sm:my-8">
+          <div className="w-32 sm:w-40 md:w-48 lg:w-56 max-w-xs">
+            <img
+              src="/coloring-book-3d-optimized.webp"
+              alt="Poo Poo Mountain Coloring Book - Free with email signup"
+              className="w-full h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
+            />
+          </div>
+        </div>
+      )}
+
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
