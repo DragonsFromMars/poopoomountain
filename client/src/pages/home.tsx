@@ -274,6 +274,15 @@ export default function Home() {
           url.hash = 'journey';
           history.replaceState(null, "", url.toString());
         }
+      } else if (window.location.hash === '#subscribe' || params.get('scroll') === 'subscribe') {
+        document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+        // Clean up query parameter after scrolling
+        if (params.get('scroll') === 'subscribe') {
+          const url = new URL(window.location.href);
+          url.searchParams.delete('scroll');
+          url.hash = 'subscribe';
+          history.replaceState(null, "", url.toString());
+        }
       }
     };
     
@@ -482,7 +491,7 @@ export default function Home() {
       {/* Second Signup Section */}
       <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-white/80">
         {/* Poo and Toilet Friends Image */}
-        <div className="flex justify-center mb-8 sm:mb-12">
+        <div id="subscribe" className="flex justify-center mb-8 sm:mb-12">
           <img
             src="/poo-toilet-friends-optimized.webp"
             alt="Poo and Toilet Characters - Best Friends Forever"

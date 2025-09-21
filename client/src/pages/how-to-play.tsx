@@ -162,7 +162,7 @@ export default function HowToPlayPage() {
 
 
         {/* Card Guide Section */}
-        <div className="mb-16">
+        <div id="card-guide" className="mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#3D2B1F] mb-2 text-center font-['Bangers']">
             🃏 Card Guide
           </h2>

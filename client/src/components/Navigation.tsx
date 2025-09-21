@@ -73,6 +73,21 @@ export function Navigation() {
             <Button
               variant="ghost"
               onClick={() => {
+                if (location !== "/how-to-play") {
+                  navigate("/how-to-play#card-guide");
+                } else {
+                  document.getElementById('card-guide')?.scrollIntoView({ behavior: 'smooth' });
+                  history.replaceState(null, "", "#card-guide");
+                }
+              }}
+              className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto"
+            >
+              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Card Guide</span>
+              <span className="text-xs sm:text-sm lg:text-base font-normal">卡牌指南</span>
+            </Button>
+            <Button
+              variant="ghost"
+              onClick={() => {
                 if (location !== "/") {
                   // Navigate to home page with scroll parameter (SPA navigation, no reload)
                   navigate("/?scroll=journey");
@@ -87,6 +102,21 @@ export function Navigation() {
             >
               <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Road Map</span>
               <span className="text-xs sm:text-sm lg:text-base font-normal">路線圖</span>
+            </Button>
+            <Button
+              variant="ghost"
+              onClick={() => {
+                if (location !== "/") {
+                  navigate("/?scroll=subscribe");
+                } else {
+                  document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+                  history.replaceState(null, "", "#subscribe");
+                }
+              }}
+              className="font-bold bg-orange-500 hover:bg-orange-600 text-white hover:text-white border border-orange-600 flex flex-col items-center py-1 h-auto"
+            >
+              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Subscribe</span>
+              <span className="text-xs sm:text-sm lg:text-base font-normal">訂閱</span>
             </Button>
           </div>
 
@@ -165,6 +195,22 @@ export function Navigation() {
                 variant="ghost"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
+                  if (location !== "/how-to-play") {
+                    navigate("/how-to-play#card-guide");
+                  } else {
+                    document.getElementById('card-guide')?.scrollIntoView({ behavior: 'smooth' });
+                    history.replaceState(null, "", "#card-guide");
+                  }
+                }}
+                className="w-full font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-3 h-auto"
+              >
+                <span className="font-['Bangers'] text-base">Card Guide</span>
+                <span className="text-sm font-normal">卡牌指南</span>
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
                   if (location !== "/") {
                     navigate("/?scroll=journey");
                   } else {
@@ -176,6 +222,22 @@ export function Navigation() {
               >
                 <span className="font-['Bangers'] text-base">Road Map</span>
                 <span className="text-sm font-normal">路線圖</span>
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  if (location !== "/") {
+                    navigate("/?scroll=subscribe");
+                  } else {
+                    document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+                    history.replaceState(null, "", "#subscribe");
+                  }
+                }}
+                className="w-full font-bold bg-orange-500 hover:bg-orange-600 text-white hover:text-white border border-orange-600 flex flex-col items-center py-3 h-auto"
+              >
+                <span className="font-['Bangers'] text-base">Subscribe</span>
+                <span className="text-sm font-normal">訂閱</span>
               </Button>
             </div>
           </div>
