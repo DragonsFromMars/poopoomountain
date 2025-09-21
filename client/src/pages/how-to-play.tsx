@@ -814,7 +814,7 @@ export default function HowToPlayPage() {
             `}</style>
             {/* Left Arrow */}
             <div 
-              className="absolute left-8 sm:left-12 md:left-16 top-1/2 transform -translate-y-1/2"
+              className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2"
               style={{
                 animation: 'arrowFlash 1.5s infinite ease-in-out'
               }}
@@ -840,7 +840,7 @@ export default function HowToPlayPage() {
 
             {/* Right Arrow */}
             <div 
-              className="absolute right-8 sm:right-12 md:right-16 top-1/2 transform -translate-y-1/2"
+              className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2"
               style={{
                 animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
               }}
