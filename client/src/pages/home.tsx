@@ -332,7 +332,7 @@ export default function Home() {
         </div>
 
         {/* Number 1 Victory Image */}
-        <div className="flex justify-center mt-8 sm:mt-12 mb-4 sm:mb-6">
+        <div className="flex justify-center mt-8 sm:mt-12 mb-2 sm:mb-3">
           <img
             src="/poo-toilet-number1-optimized.webp"
             alt="Poo and Toilet Characters - We're Number 1!"
@@ -342,7 +342,7 @@ export default function Home() {
       </section>
 
       {/* First Signup Section */}
-      <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-white/80">
+      <section className="px-4 sm:px-6 pt-4 sm:pt-6 pb-12 sm:pb-16 lg:pb-20 bg-white/80">
         <div className="max-w-sm sm:max-w-md lg:max-w-xl mx-auto">
           <EmailSignupForm
             source="form1"
