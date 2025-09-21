@@ -610,7 +610,7 @@ export default function HowToPlayPage() {
                     🧻 No Toilet Paper
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🧻 沒有衛生紙
+                    沒有衛生紙
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     Pick one player.
@@ -660,7 +660,7 @@ export default function HowToPlayPage() {
                     🌮 Taco Tuesday
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🌮 墨西哥餅星期二
+                    墨西哥餅星期二
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     <strong>
@@ -682,7 +682,7 @@ export default function HowToPlayPage() {
                     🌊 Sewer Backup
                   </h3>
                   <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
-                    🌊 下水道堵塞
+                    下水道堵塞
                   </h4>
                   <p className="text-amber-700 text-lg mb-1">
                     For the next round, no one can flip toilets to poo{" "}
