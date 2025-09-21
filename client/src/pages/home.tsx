@@ -97,9 +97,23 @@ export function EmailSignupForm({
 
   return (
     <div className="space-y-4 sm:space-y-6">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bangers mb-4 text-center text-amber-900">
-        {title}
-      </h2>
+      <div className="text-center mb-4">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bangers mb-2 text-amber-900">
+          {title}
+        </h2>
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bangers text-amber-700">
+          {source === "form1" 
+            ? "💩 加入噗噗山小隊！"
+            : source === "form2"
+            ? "💩 準備好加入噗噗山了嗎？"
+            : source === "legend-page"
+            ? "💩 加入傳說！"
+            : source === "how-to-play-page"
+            ? "💩 加入噗噗山小隊！"
+            : "💩 加入噗噗山小隊！"
+          }
+        </h3>
+      </div>
       <p className="mb-4 sm:mb-6 text-poop text-center text-sm sm:text-base leading-relaxed">
         {source === "form1"
           ? "Enter your email to join the early bird squad. We'll reward your loyalty with nonsense and prizes."

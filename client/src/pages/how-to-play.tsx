@@ -13,63 +13,9 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { EmailSignupForm } from "./home";
 
 export default function HowToPlayPage() {
-  const { toast } = useToast();
-  const queryClient = useQueryClient();
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const form = useForm<InsertEmail>({
-    resolver: zodResolver(
-      insertEmailSchema.extend({
-        email: insertEmailSchema.shape.email.email(
-          "Please enter a valid email address",
-        ),
-      }),
-    ),
-    defaultValues: {
-      email: "",
-      source: "how-to-play-form",
-    },
-  });
-
-  const subscribeEmail = useMutation({
-    mutationFn: async (data: InsertEmail) => {
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || "Subscription failed");
-      }
-      return response.json();
-    },
-    onSuccess: () => {
-      toast({
-        title: "Success! 💩",
-        description: "🎉 Welcome to the Poo Poo Mountain family! When the chaos begins, we'll notify you right away! 🎉 歡迎加入《噗噗山》大家庭！混亂開始時，我們會第一時間通知你！",
-        variant: "default",
-      });
-      setIsSubmitted(true);
-      form.reset();
-      queryClient.invalidateQueries({ queryKey: ["/api/emails"] });
-    },
-    onError: (error: any) => {
-      const message =
-        error?.message || "Something went wrong. Please try again.";
-      toast({
-        title: "Oops!",
-        description: message,
-        variant: "destructive",
-      });
-    },
-  });
-
-  const onSubmit = (data: InsertEmail) => {
-    subscribeEmail.mutate(data);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
@@ -787,126 +733,11 @@ export default function HowToPlayPage() {
 
         {/* Email Signup Section */}
         <div className="bg-white rounded-xl p-8 lg:p-12 shadow-lg border-4 border-amber-900">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl lg:text-4xl font-bold text-amber-900 mb-2 font-['Bangers']">
-              💩 Join the Poo Poo Mountain Squad!
-            </h3>
-            <h4 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-4 font-['Bangers']">
-              💩 加入噗噗山小隊！
-            </h4>
-            <p className="text-lg lg:text-xl text-amber-700 mb-1">
-              Join our e-mail list and get a free printable coloring book, exclusive backer rewards for email list subscribers during crowdfunding launch, and a front row seat to the most ridiculous (and smelly) card game ever created.
-            </p>
-            <p className="text-base lg:text-lg text-amber-700">
-              加入我們的電子郵件名單，獲得免費可列印的著色本、眾籌啟動期間專屬贊助者獎勵，以及最前排觀賞史上最荒謬（也最臭）桌遊的機會。
-            </p>
-          </div>
-
-          {/* Coloring Book Image with Arrows */}
-          <div className="flex items-center justify-center my-6 sm:my-8 relative">
-            <style>{`
-              @keyframes arrowFlash {
-                0%, 100% { opacity: 1; transform: translateY(0px) scale(1); }
-                25% { opacity: 0.6; transform: translateY(2px) scale(1.1); }
-                50% { opacity: 1; transform: translateY(-1px) scale(0.95); }
-                75% { opacity: 0.8; transform: translateY(1px) scale(1.05); }
-              }
-            `}</style>
-            {/* Left Arrow */}
-            <div 
-              className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2"
-              style={{
-                animation: 'arrowFlash 1.5s infinite ease-in-out'
-              }}
-            >
-              <img 
-                src="/cartoon-arrow.webp"
-                alt="Arrow pointing to signup"
-                className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
-                style={{
-                  transform: 'scaleX(-1) rotate(-45deg)'
-                }}
-              />
-            </div>
-
-            {/* Coloring Book Image */}
-            <div className="w-32 sm:w-40 md:w-48 lg:w-56 max-w-xs mx-8 sm:mx-16">
-              <img
-                src="/coloring-book-3d-optimized.webp"
-                alt="Poo Poo Mountain Coloring Book - Free with email signup"
-                className="w-full h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
-              />
-            </div>
-
-            {/* Right Arrow */}
-            <div 
-              className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2"
-              style={{
-                animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
-              }}
-            >
-              <img 
-                src="/cartoon-arrow.webp"
-                alt="Arrow pointing to signup"
-                className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
-                style={{
-                  transform: 'scaleX(1) rotate(-45deg)'
-                }}
-              />
-            </div>
-          </div>
-
-          {isSubmitted ? (
-            <div className="text-center py-8">
-              <div className="text-6xl mb-4">🎉</div>
-              <h3 className="text-2xl font-bold text-green-700 mb-2">
-                🎉 Welcome to the Poo Poo Mountain family!
-              </h3>
-              <p className="text-green-600 mb-2">
-                When the chaos begins, we'll notify you right away!
-              </p>
-              <h3 className="text-2xl font-bold text-green-700 mb-2">
-                🎉 歡迎加入《噗噗山》大家庭！
-              </h3>
-              <p className="text-green-600">
-                混亂開始時，我們會第一時間通知你！
-              </p>
-            </div>
-          ) : (
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="max-w-2xl mx-auto"
-              >
-                <div className="flex flex-col sm:flex-row gap-4 items-center">
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem className="flex-1">
-                        <FormControl>
-                          <Input
-                            placeholder="your.email@example.com"
-                            {...field}
-                            className="text-lg p-6 border-2 border-amber-900 focus:border-amber-900"
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button
-                    type="submit"
-                    size="lg"
-                    disabled={subscribeEmail.isPending}
-                    className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-6 text-lg sm:min-w-[200px]"
-                  >
-                    {subscribeEmail.isPending ? "Joining..." : "Join Squad! 💩"}
-                  </Button>
-                </div>
-              </form>
-            </Form>
-          )}
+          <EmailSignupForm
+            source="how-to-play-page"
+            title="💩 Join the Poo Poo Mountain Squad!"
+            buttonText="Join Squad! 💩"
+          />
         </div>
       </div>
     </div>
