@@ -714,7 +714,7 @@ export default function HowToPlayPage() {
         {/* Toilet and Poo Characters Divider */}
         <div className="text-center mb-16">
           <img 
-            src="/toilet-poo-characters.png" 
+            src="/toilet-poo-characters-optimized.webp" 
             alt="Toilet Man and Poo Man Characters" 
             className="mx-auto w-32 h-32 sm:w-40 sm:h-40 object-contain"
           />
