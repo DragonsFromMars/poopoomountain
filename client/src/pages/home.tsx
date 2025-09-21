@@ -113,13 +113,71 @@ export function EmailSignupForm({
 
       {/* Coloring Book Image - Only show for non-form1 sources */}
       {source !== "form1" && (
-        <div className="flex justify-center my-6 sm:my-8">
-          <div className="w-32 sm:w-40 md:w-48 lg:w-56 max-w-xs">
+        <div className="flex items-center justify-center my-6 sm:my-8 relative">
+          {/* Left Arrow */}
+          <div className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2">
+            <svg 
+              width="40" 
+              height="60" 
+              viewBox="0 0 40 60" 
+              className="animate-bounce text-amber-600"
+              style={{
+                animation: 'flash 2s infinite ease-in-out'
+              }}
+            >
+              <defs>
+                <style>{`
+                  @keyframes flash {
+                    0%, 50% { opacity: 1; transform: translateY(0px); }
+                    25% { opacity: 0.6; transform: translateY(2px); }
+                    75% { opacity: 0.8; transform: translateY(-1px); }
+                  }
+                `}</style>
+              </defs>
+              <path
+                d="M20 10 L20 35 M12 27 L20 35 L28 27"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              />
+              <circle cx="20" cy="45" r="8" fill="currentColor" opacity="0.8"/>
+              <text x="20" y="50" textAnchor="middle" className="text-xs font-bold fill-white">👇</text>
+            </svg>
+          </div>
+
+          {/* Coloring Book Image */}
+          <div className="w-32 sm:w-40 md:w-48 lg:w-56 max-w-xs mx-8 sm:mx-16">
             <img
               src="/coloring-book-3d-optimized.webp"
               alt="Poo Poo Mountain Coloring Book - Free with email signup"
               className="w-full h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
             />
+          </div>
+
+          {/* Right Arrow */}
+          <div className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2">
+            <svg 
+              width="40" 
+              height="60" 
+              viewBox="0 0 40 60" 
+              className="animate-bounce text-amber-600"
+              style={{
+                animation: 'flash 2s infinite ease-in-out 0.5s'
+              }}
+            >
+              <path
+                d="M20 10 L20 35 M12 27 L20 35 L28 27"
+                stroke="currentColor"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              />
+              <circle cx="20" cy="45" r="8" fill="currentColor" opacity="0.8"/>
+              <text x="20" y="50" textAnchor="middle" className="text-xs font-bold fill-white">👇</text>
+            </svg>
           </div>
         </div>
       )}
