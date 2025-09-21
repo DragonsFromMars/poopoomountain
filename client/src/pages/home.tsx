@@ -320,11 +320,12 @@ export default function Home() {
           />
         </div>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-poop max-w-4xl mx-auto leading-relaxed">
-          The funniest card game for kids (and weird adults). Watch the trailer
-          and sign up below for early bird chaos.
+          The funniest card game for kids (and adults young at heart).
+          Watch the trailer and sign up below for early bird chaos.
         </p>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-amber-900 max-w-4xl mx-auto leading-relaxed">
-          最有趣的兒童（和怪異的成年人）卡牌遊戲。觀看預告片並在下方註冊以獲得早鳥混亂。
+          最爆笑的卡牌遊戲，專為小朋友（還有童心未泯的大人）打造！
+          觀看預告片並立即報名，搶先參加早鳥瘋狂！
         </p>
 
         {/* Video */}
