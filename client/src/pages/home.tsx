@@ -330,6 +330,15 @@ export default function Home() {
             />
           </div>
         </div>
+
+        {/* Number 1 Victory Image */}
+        <div className="flex justify-center mt-8 sm:mt-12 mb-4 sm:mb-6">
+          <img
+            src="/poo-toilet-number1-optimized.webp"
+            alt="Poo and Toilet Characters - We're Number 1!"
+            className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
+          />
+        </div>
       </section>
 
       {/* First Signup Section */}
