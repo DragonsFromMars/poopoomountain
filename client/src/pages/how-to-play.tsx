@@ -876,9 +876,9 @@ export default function HowToPlayPage() {
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="max-w-md mx-auto"
+                className="max-w-2xl mx-auto"
               >
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 items-center">
                   <FormField
                     control={form.control}
                     name="email"
@@ -899,7 +899,7 @@ export default function HowToPlayPage() {
                     type="submit"
                     size="lg"
                     disabled={subscribeEmail.isPending}
-                    className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-6 text-lg"
+                    className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-6 text-lg sm:min-w-[200px]"
                   >
                     {subscribeEmail.isPending ? "Joining..." : "Join Squad! 💩"}
                   </Button>
