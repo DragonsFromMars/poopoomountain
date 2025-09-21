@@ -3,11 +3,43 @@ import { useToast } from "@/hooks/use-toast";
 import { EmailSignupForm } from "./home";
 
 export default function Legend() {
+  const toiletPaperPattern = `
+    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="toiletPaper" patternUnits="userSpaceOnUse" width="30" height="30">
+          <!-- Base toilet paper color -->
+          <rect width="30" height="30" fill="#fefdfb"/>
+          
+          <!-- Quilted diamond pattern -->
+          <path d="M0,15 L15,0 L30,15 L15,30 Z" fill="none" stroke="#f5f1ed" stroke-width="0.8" opacity="0.6"/>
+          <path d="M15,0 L30,15 L15,30 L0,15 Z" fill="none" stroke="#f0ebe3" stroke-width="0.5" opacity="0.4"/>
+          
+          <!-- Subtle texture dots -->
+          <circle cx="7.5" cy="7.5" r="0.5" fill="#f5f1ed" opacity="0.3"/>
+          <circle cx="22.5" cy="7.5" r="0.5" fill="#f5f1ed" opacity="0.3"/>
+          <circle cx="7.5" cy="22.5" r="0.5" fill="#f5f1ed" opacity="0.3"/>
+          <circle cx="22.5" cy="22.5" r="0.5" fill="#f5f1ed" opacity="0.3"/>
+          <circle cx="15" cy="15" r="0.5" fill="#f0ebe3" opacity="0.2"/>
+          
+          <!-- Perforated edge suggestion -->
+          <line x1="0" y1="29" x2="30" y2="29" stroke="#ede7df" stroke-width="0.3" opacity="0.5" stroke-dasharray="1,2"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#toiletPaper)"/>
+    </svg>
+  `;
+
+  const backgroundStyle = {
+    backgroundImage: `url("data:image/svg+xml;charset=utf-8,${encodeURIComponent(toiletPaperPattern)}")`,
+    backgroundRepeat: 'repeat',
+    backgroundSize: '30px 30px'
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100">
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/95 backdrop-blur-sm border-4 border-[#3D2B1F] shadow-xl">
+          <Card className="backdrop-blur-sm border-4 border-[#3D2B1F] shadow-xl" style={backgroundStyle}>
             <CardContent className="p-8">
               {/* Title */}
               <div className="text-center mb-8">
