@@ -472,6 +472,15 @@ export default function Home() {
 
       {/* Second Signup Section */}
       <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-white/80">
+        {/* Poo and Toilet Friends Image */}
+        <div className="flex justify-center mb-8 sm:mb-12">
+          <img
+            src="/poo-toilet-friends-optimized.webp"
+            alt="Poo and Toilet Characters - Best Friends Forever"
+            className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
+          />
+        </div>
+
         <div className="max-w-sm sm:max-w-md lg:max-w-xl mx-auto">
           <EmailSignupForm
             source="form2"
