@@ -122,7 +122,7 @@ export function EmailSignupForm({
               75% { opacity: 0.8; transform: translateY(1px) scale(1.05); }
             }
           `}</style>
-          {/* Left Arrow - Custom Cartoon Arrow */}
+          {/* Left Arrow - Flowing from book toward form */}
           <div 
             className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2"
             style={{
@@ -134,7 +134,7 @@ export function EmailSignupForm({
               alt="Arrow pointing to signup"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                transform: 'rotate(45deg)'
+                transform: 'scaleX(-1) rotate(-45deg)'
               }}
             />
           </div>
@@ -148,7 +148,7 @@ export function EmailSignupForm({
             />
           </div>
 
-          {/* Right Arrow - Custom Cartoon Arrow Mirrored */}
+          {/* Right Arrow - Flowing from book toward form */}
           <div 
             className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2"
             style={{
@@ -160,7 +160,7 @@ export function EmailSignupForm({
               alt="Arrow pointing to signup"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                transform: 'scaleX(-1) rotate(-45deg)'
+                transform: 'scaleX(1) rotate(-45deg)'
               }}
             />
           </div>
