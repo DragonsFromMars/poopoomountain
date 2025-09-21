@@ -795,11 +795,65 @@ export default function HowToPlayPage() {
               💩 加入噗噗山小隊！
             </h4>
             <p className="text-lg lg:text-xl text-amber-700 mb-1">
-              Get notified when the game launches and receive exclusive updates!
+              Join our e-mail list and get a free printable coloring book, exclusive backer rewards for email list subscribers during crowdfunding launch, and a front row seat to the most ridiculous (and smelly) card game ever created.
             </p>
             <p className="text-base lg:text-lg text-amber-700">
-              在遊戲發布時獲得通知並接收獨家更新！
+              加入我們的電子郵件名單，獲得免費可列印的著色本、眾籌啟動期間專屬贊助者獎勵，以及最前排觀賞史上最荒謬（也最臭）桌遊的機會。
             </p>
+          </div>
+
+          {/* Coloring Book Image with Arrows */}
+          <div className="flex items-center justify-center my-6 sm:my-8 relative">
+            <style>{`
+              @keyframes arrowFlash {
+                0%, 100% { opacity: 1; transform: translateY(0px) scale(1); }
+                25% { opacity: 0.6; transform: translateY(2px) scale(1.1); }
+                50% { opacity: 1; transform: translateY(-1px) scale(0.95); }
+                75% { opacity: 0.8; transform: translateY(1px) scale(1.05); }
+              }
+            `}</style>
+            {/* Left Arrow */}
+            <div 
+              className="absolute left-8 sm:left-12 md:left-16 top-1/2 transform -translate-y-1/2"
+              style={{
+                animation: 'arrowFlash 1.5s infinite ease-in-out'
+              }}
+            >
+              <img 
+                src="/cartoon-arrow.webp"
+                alt="Arrow pointing to signup"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                style={{
+                  transform: 'scaleX(-1) rotate(-45deg)'
+                }}
+              />
+            </div>
+
+            {/* Coloring Book Image */}
+            <div className="w-32 sm:w-40 md:w-48 lg:w-56 max-w-xs mx-8 sm:mx-16">
+              <img
+                src="/coloring-book-3d-optimized.webp"
+                alt="Poo Poo Mountain Coloring Book - Free with email signup"
+                className="w-full h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
+              />
+            </div>
+
+            {/* Right Arrow */}
+            <div 
+              className="absolute right-8 sm:right-12 md:right-16 top-1/2 transform -translate-y-1/2"
+              style={{
+                animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
+              }}
+            >
+              <img 
+                src="/cartoon-arrow.webp"
+                alt="Arrow pointing to signup"
+                className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                style={{
+                  transform: 'scaleX(1) rotate(-45deg)'
+                }}
+              />
+            </div>
           </div>
 
           {isSubmitted ? (
