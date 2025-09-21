@@ -114,36 +114,51 @@ export function EmailSignupForm({
       {/* Coloring Book Image - Only show for non-form1 sources */}
       {source !== "form1" && (
         <div className="flex items-center justify-center my-6 sm:my-8 relative">
-          {/* Left Arrow */}
+          {/* Left Arrow - Curved Inward */}
           <div className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2">
             <svg 
-              width="40" 
-              height="60" 
-              viewBox="0 0 40 60" 
-              className="animate-bounce text-amber-600"
+              width="50" 
+              height="70" 
+              viewBox="0 0 50 70" 
+              className="text-amber-600"
               style={{
-                animation: 'flash 2s infinite ease-in-out'
+                animation: 'flashBounce 2s infinite ease-in-out'
               }}
             >
               <defs>
                 <style>{`
-                  @keyframes flash {
-                    0%, 50% { opacity: 1; transform: translateY(0px); }
-                    25% { opacity: 0.6; transform: translateY(2px); }
-                    75% { opacity: 0.8; transform: translateY(-1px); }
+                  @keyframes flashBounce {
+                    0%, 100% { opacity: 1; transform: translateY(0px) scale(1); }
+                    25% { opacity: 0.7; transform: translateY(3px) scale(1.05); }
+                    50% { opacity: 1; transform: translateY(-2px) scale(0.95); }
+                    75% { opacity: 0.8; transform: translateY(1px) scale(1.02); }
                   }
                 `}</style>
               </defs>
+              
+              {/* Curved arrow body */}
               <path
-                d="M20 10 L20 35 M12 27 L20 35 L28 27"
+                d="M15 5 Q20 15, 25 25 Q32 35, 35 45"
+                stroke="currentColor"
+                strokeWidth="5"
+                strokeLinecap="round"
+                fill="none"
+              />
+              
+              {/* Arrow head pointing down and inward */}
+              <path
+                d="M30 40 L35 45 L40 42 M32 38 L35 45 L35 50"
                 stroke="currentColor"
                 strokeWidth="4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 fill="none"
               />
-              <circle cx="20" cy="45" r="8" fill="currentColor" opacity="0.8"/>
-              <text x="20" y="50" textAnchor="middle" className="text-xs font-bold fill-white">👇</text>
+              
+              {/* Cartoon-style emphasis bubble */}
+              <ellipse cx="20" cy="58" rx="12" ry="8" fill="currentColor" opacity="0.9"/>
+              <ellipse cx="18" cy="56" rx="3" ry="2" fill="white" opacity="0.8"/>
+              <text x="20" y="62" textAnchor="middle" className="text-sm font-bold fill-white">👇</text>
             </svg>
           </div>
 
@@ -156,27 +171,40 @@ export function EmailSignupForm({
             />
           </div>
 
-          {/* Right Arrow */}
+          {/* Right Arrow - Curved Inward */}
           <div className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2">
             <svg 
-              width="40" 
-              height="60" 
-              viewBox="0 0 40 60" 
-              className="animate-bounce text-amber-600"
+              width="50" 
+              height="70" 
+              viewBox="0 0 50 70" 
+              className="text-amber-600"
               style={{
-                animation: 'flash 2s infinite ease-in-out 0.5s'
+                animation: 'flashBounce 2s infinite ease-in-out 0.6s'
               }}
             >
+              {/* Curved arrow body - mirrored */}
               <path
-                d="M20 10 L20 35 M12 27 L20 35 L28 27"
+                d="M35 5 Q30 15, 25 25 Q18 35, 15 45"
+                stroke="currentColor"
+                strokeWidth="5"
+                strokeLinecap="round"
+                fill="none"
+              />
+              
+              {/* Arrow head pointing down and inward */}
+              <path
+                d="M20 40 L15 45 L10 42 M18 38 L15 45 L15 50"
                 stroke="currentColor"
                 strokeWidth="4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 fill="none"
               />
-              <circle cx="20" cy="45" r="8" fill="currentColor" opacity="0.8"/>
-              <text x="20" y="50" textAnchor="middle" className="text-xs font-bold fill-white">👇</text>
+              
+              {/* Cartoon-style emphasis bubble */}
+              <ellipse cx="30" cy="58" rx="12" ry="8" fill="currentColor" opacity="0.9"/>
+              <ellipse cx="32" cy="56" rx="3" ry="2" fill="white" opacity="0.8"/>
+              <text x="30" y="62" textAnchor="middle" className="text-sm font-bold fill-white">👇</text>
             </svg>
           </div>
         </div>
