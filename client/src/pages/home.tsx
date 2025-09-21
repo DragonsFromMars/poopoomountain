@@ -117,12 +117,12 @@ export function EmailSignupForm({
       <p className="mb-4 sm:mb-6 text-poop text-center text-sm sm:text-base leading-relaxed">
         {source === "form1"
           ? "Enter your email to join the early bird squad. We'll reward your loyalty with nonsense and prizes."
-          : "Join our e-mail list and get a free printable coloring book, exclusive backer rewards for email list subscribers during crowdfunding launch, and a front row seat to the most ridiculous (and smelly) card game ever created."}
+          : "Join our e-mail list and get a free printable coloring book, exclusive backer rewards for email list subscribers during crowdfunding launch, and a front row seat to the most ridiculous (and smelliest) card game ever created."}
       </p>
       <p className="mb-4 sm:mb-6 text-[#3D2B1F] text-center text-xs sm:text-sm leading-relaxed">
         {source === "form1"
           ? "輸入您的電子郵件以加入早鳥隊伍。我們將以胡言亂語和獎品來獎勵您的忠誠。"
-          : "加入我們的電子郵件名單，獲得免費可列印的著色本、眾籌啟動期間專屬贊助者獎勵，以及最前排觀賞史上最荒謬（也最臭）桌遊的機會。"}
+          : "加入我們的電子郵件名單，獲得免費可列印的著色本、眾籌啟動期間專屬贊助者獎勵，以及最前排觀賞史上最荒謬（也最臭的）桌遊的機會。"}
       </p>
 
       {/* Coloring Book Image - Only show for non-form1 sources */}
