@@ -114,52 +114,29 @@ export function EmailSignupForm({
       {/* Coloring Book Image - Only show for non-form1 sources */}
       {source !== "form1" && (
         <div className="flex items-center justify-center my-6 sm:my-8 relative">
-          {/* Left Arrow - Curved Inward */}
-          <div className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2">
-            <svg 
-              width="50" 
-              height="70" 
-              viewBox="0 0 50 70" 
-              className="text-amber-600"
+          <style>{`
+            @keyframes arrowFlash {
+              0%, 100% { opacity: 1; transform: translateY(0px) scale(1); }
+              25% { opacity: 0.6; transform: translateY(2px) scale(1.1); }
+              50% { opacity: 1; transform: translateY(-1px) scale(0.95); }
+              75% { opacity: 0.8; transform: translateY(1px) scale(1.05); }
+            }
+          `}</style>
+          {/* Left Arrow - Custom Cartoon Arrow */}
+          <div 
+            className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2"
+            style={{
+              animation: 'arrowFlash 1.5s infinite ease-in-out'
+            }}
+          >
+            <img 
+              src="/cartoon-arrow.webp"
+              alt="Arrow pointing to signup"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                animation: 'flashBounce 2s infinite ease-in-out'
+                transform: 'rotate(45deg)'
               }}
-            >
-              <defs>
-                <style>{`
-                  @keyframes flashBounce {
-                    0%, 100% { opacity: 1; transform: translateY(0px) scale(1); }
-                    25% { opacity: 0.7; transform: translateY(3px) scale(1.05); }
-                    50% { opacity: 1; transform: translateY(-2px) scale(0.95); }
-                    75% { opacity: 0.8; transform: translateY(1px) scale(1.02); }
-                  }
-                `}</style>
-              </defs>
-              
-              {/* Curved arrow body */}
-              <path
-                d="M15 5 Q20 15, 25 25 Q32 35, 35 45"
-                stroke="currentColor"
-                strokeWidth="5"
-                strokeLinecap="round"
-                fill="none"
-              />
-              
-              {/* Arrow head pointing down and inward */}
-              <path
-                d="M30 40 L35 45 L40 42 M32 38 L35 45 L35 50"
-                stroke="currentColor"
-                strokeWidth="4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-              />
-              
-              {/* Cartoon-style emphasis bubble */}
-              <ellipse cx="20" cy="58" rx="12" ry="8" fill="currentColor" opacity="0.9"/>
-              <ellipse cx="18" cy="56" rx="3" ry="2" fill="white" opacity="0.8"/>
-              <text x="20" y="62" textAnchor="middle" className="text-sm font-bold fill-white">👇</text>
-            </svg>
+            />
           </div>
 
           {/* Coloring Book Image */}
@@ -171,41 +148,21 @@ export function EmailSignupForm({
             />
           </div>
 
-          {/* Right Arrow - Curved Inward */}
-          <div className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2">
-            <svg 
-              width="50" 
-              height="70" 
-              viewBox="0 0 50 70" 
-              className="text-amber-600"
+          {/* Right Arrow - Custom Cartoon Arrow Mirrored */}
+          <div 
+            className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2"
+            style={{
+              animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
+            }}
+          >
+            <img 
+              src="/cartoon-arrow.webp"
+              alt="Arrow pointing to signup"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                animation: 'flashBounce 2s infinite ease-in-out 0.6s'
+                transform: 'scaleX(-1) rotate(-45deg)'
               }}
-            >
-              {/* Curved arrow body - mirrored */}
-              <path
-                d="M35 5 Q30 15, 25 25 Q18 35, 15 45"
-                stroke="currentColor"
-                strokeWidth="5"
-                strokeLinecap="round"
-                fill="none"
-              />
-              
-              {/* Arrow head pointing down and inward */}
-              <path
-                d="M20 40 L15 45 L10 42 M18 38 L15 45 L15 50"
-                stroke="currentColor"
-                strokeWidth="4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-              />
-              
-              {/* Cartoon-style emphasis bubble */}
-              <ellipse cx="30" cy="58" rx="12" ry="8" fill="currentColor" opacity="0.9"/>
-              <ellipse cx="32" cy="56" rx="3" ry="2" fill="white" opacity="0.8"/>
-              <text x="30" y="62" textAnchor="middle" className="text-sm font-bold fill-white">👇</text>
-            </svg>
+            />
           </div>
         </div>
       )}
