@@ -182,6 +182,26 @@ export default function Legend() {
           </Card>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-poop text-white/80 py-6 sm:py-8 px-4 sm:px-6 text-center">
+        <p className="font-bangers text-xl sm:text-2xl mb-2 text-amber-900">
+          💩 Poo Poo Mountain
+        </p>
+        <p className="text-sm sm:text-base">
+          The card game that's about to get real messy.
+        </p>
+        <p className="text-sm sm:text-base text-amber-900">
+          最臭名昭著的卡牌遊戲。
+        </p>
+        <p className="text-xs sm:text-sm mt-4 opacity-70">
+          © 2025 Poo Poo Mountain. All rights reserved. No actual poop
+          involved.
+        </p>
+        <p className="text-xs sm:text-sm mt-4 opacity-70">
+          © 2025 噗噗山。保留所有權利。不涉及實際的糞便。
+        </p>
+      </footer>
     </div>
   );
 }
