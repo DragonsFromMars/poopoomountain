@@ -330,19 +330,19 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
 
+      {/* First Signup Section */}
+      <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-white/80">
         {/* Number 1 Victory Image */}
-        <div className="flex justify-center mt-8 sm:mt-12 mb-2 sm:mb-3">
+        <div className="flex justify-center mb-8 sm:mb-12">
           <img
             src="/poo-toilet-number1-optimized.webp"
             alt="Poo and Toilet Characters - We're Number 1!"
             className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
           />
         </div>
-      </section>
 
-      {/* First Signup Section */}
-      <section className="px-4 sm:px-6 pt-4 sm:pt-6 pb-12 sm:pb-16 lg:pb-20 bg-white/80">
         <div className="max-w-sm sm:max-w-md lg:max-w-xl mx-auto">
           <EmailSignupForm
             source="form1"
