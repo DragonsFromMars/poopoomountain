@@ -124,7 +124,7 @@ export function EmailSignupForm({
           `}</style>
           {/* Left Arrow - Flowing from book toward form */}
           <div 
-            className="absolute left-0 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2"
+            className="absolute left-8 sm:left-12 md:left-16 top-1/2 transform -translate-y-1/2"
             style={{
               animation: 'arrowFlash 1.5s infinite ease-in-out'
             }}
@@ -150,7 +150,7 @@ export function EmailSignupForm({
 
           {/* Right Arrow - Flowing from book toward form */}
           <div 
-            className="absolute right-0 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2"
+            className="absolute right-8 sm:right-12 md:right-16 top-1/2 transform -translate-y-1/2"
             style={{
               animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
             }}
