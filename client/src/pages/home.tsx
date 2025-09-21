@@ -103,7 +103,7 @@ export function EmailSignupForm({
       <p className="mb-4 sm:mb-6 text-poop text-center text-sm sm:text-base leading-relaxed">
         {source === "form1"
           ? "Enter your email to join the early bird squad. We'll reward your loyalty with nonsense and prizes."
-          : "Don't miss out on early bird perks, exclusive updates, and the chance to be part of gaming history (the smelly kind)."}
+          : "Join our e-mail list and get a free printable coloring book, exclusive backer rewards for email list subscribers during crowdfunding launch, and a front row seat to the most ridicouls (and smelly) card game ever created."}
       </p>
       <p className="mb-4 sm:mb-6 text-[#3D2B1F] text-center text-xs sm:text-sm leading-relaxed">
         {source === "form1"
