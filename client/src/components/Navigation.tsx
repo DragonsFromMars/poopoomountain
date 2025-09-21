@@ -13,17 +13,17 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity">
-              <img 
-                src="/poo-character-optimized.webp" 
-                alt="Poo Poo Mountain Character" 
+              <img
+                src="/poo-character-optimized.webp"
+                alt="Poo Poo Mountain Character"
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
               />
               <span className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#3D2B1F] font-['Bangers']">
                 Poo Poo Mountain
               </span>
-              <img 
-                src="/toilet-man-optimized.webp" 
-                alt="Toilet Character" 
+              <img
+                src="/toilet-man-optimized.webp"
+                alt="Toilet Character"
                 className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
               />
             </div>
@@ -35,39 +35,34 @@ export function Navigation() {
               <Button
                 variant={location === "/" ? "default" : "ghost"}
                 className={`font-bold ${
-                  location === "/" 
-                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                  location === "/"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 } flex flex-col items-center py-1 h-auto`}
               >
-                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Home</span>
-                <span className="text-xs sm:text-sm lg:text-base font-normal">首頁</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                  Home
+                </span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">
+                  首頁
+                </span>
               </Button>
             </Link>
             <Link href="/how-to-play">
               <Button
                 variant={location === "/how-to-play" ? "default" : "ghost"}
                 className={`font-bold ${
-                  location === "/how-to-play" 
-                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                  location === "/how-to-play"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
                     : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                 } flex flex-col items-center py-1 h-auto`}
               >
-                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">How to Play</span>
-                <span className="text-xs sm:text-sm lg:text-base font-normal">玩法</span>
-              </Button>
-            </Link>
-            <Link href="/legend">
-              <Button
-                variant={location === "/legend" ? "default" : "ghost"}
-                className={`font-bold ${
-                  location === "/legend" 
-                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
-                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
-                } flex flex-col items-center py-1 h-auto`}
-              >
-                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">The Legend</span>
-                <span className="text-xs sm:text-sm lg:text-base font-normal">傳說</span>
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                  How to Play
+                </span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">
+                  玩法
+                </span>
               </Button>
             </Link>
             <Button
@@ -76,15 +71,38 @@ export function Navigation() {
                 if (location !== "/how-to-play") {
                   navigate("/how-to-play#card-guide");
                 } else {
-                  document.getElementById('card-guide')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById("card-guide")
+                    ?.scrollIntoView({ behavior: "smooth" });
                   history.replaceState(null, "", "#card-guide");
                 }
               }}
               className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto"
             >
-              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Card Guide</span>
-              <span className="text-xs sm:text-sm lg:text-base font-normal">卡牌指南</span>
+              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                Card Guide
+              </span>
+              <span className="text-xs sm:text-sm lg:text-base font-normal">
+                卡牌指南
+              </span>
             </Button>
+            <Link href="/legend">
+              <Button
+                variant={location === "/legend" ? "default" : "ghost"}
+                className={`font-bold ${
+                  location === "/legend"
+                    ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
+                    : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
+                } flex flex-col items-center py-1 h-auto`}
+              >
+                <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                  The Legend
+                </span>
+                <span className="text-xs sm:text-sm lg:text-base font-normal">
+                  傳說
+                </span>
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               onClick={() => {
@@ -93,15 +111,21 @@ export function Navigation() {
                   navigate("/?scroll=journey");
                 } else {
                   // Already on home page, just scroll
-                  document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById("journey")
+                    ?.scrollIntoView({ behavior: "smooth" });
                   // Update URL for shareable link
                   history.replaceState(null, "", "#journey");
                 }
               }}
               className="font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-1 h-auto"
             >
-              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Road Map</span>
-              <span className="text-xs sm:text-sm lg:text-base font-normal">路線圖</span>
+              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                Road Map
+              </span>
+              <span className="text-xs sm:text-sm lg:text-base font-normal">
+                路線圖
+              </span>
             </Button>
             <Button
               variant="ghost"
@@ -109,14 +133,20 @@ export function Navigation() {
                 if (location !== "/") {
                   navigate("/?scroll=subscribe");
                 } else {
-                  document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById("subscribe")
+                    ?.scrollIntoView({ behavior: "smooth" });
                   history.replaceState(null, "", "#subscribe");
                 }
               }}
               className="font-bold bg-orange-500 hover:bg-orange-600 text-white hover:text-white border border-orange-600 flex flex-col items-center py-1 h-auto"
             >
-              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">Subscribe</span>
-              <span className="text-xs sm:text-sm lg:text-base font-normal">訂閱</span>
+              <span className="font-['Bangers'] text-sm sm:text-base lg:text-lg">
+                Subscribe
+              </span>
+              <span className="text-xs sm:text-sm lg:text-base font-normal">
+                訂閱
+              </span>
             </Button>
           </div>
 
@@ -154,8 +184,8 @@ export function Navigation() {
                   variant={location === "/" ? "default" : "ghost"}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`w-full font-bold ${
-                    location === "/" 
-                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    location === "/"
+                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
                       : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                   } flex flex-col items-center py-3 h-auto`}
                 >
@@ -168,22 +198,42 @@ export function Navigation() {
                   variant={location === "/how-to-play" ? "default" : "ghost"}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`w-full font-bold ${
-                    location === "/how-to-play" 
-                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    location === "/how-to-play"
+                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
                       : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                   } flex flex-col items-center py-3 h-auto`}
                 >
-                  <span className="font-['Bangers'] text-base">How to Play</span>
+                  <span className="font-['Bangers'] text-base">
+                    How to Play
+                  </span>
                   <span className="text-sm font-normal">玩法</span>
                 </Button>
               </Link>
+              <Button
+                variant="ghost"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  if (location !== "/how-to-play") {
+                    navigate("/how-to-play#card-guide");
+                  } else {
+                    document
+                      .getElementById("card-guide")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                    history.replaceState(null, "", "#card-guide");
+                  }
+                }}
+                className="w-full font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-3 h-auto"
+              >
+                <span className="font-['Bangers'] text-base">Card Guide</span>
+                <span className="text-sm font-normal">卡牌指南</span>
+              </Button>
               <Link href="/legend">
                 <Button
                   variant={location === "/legend" ? "default" : "ghost"}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`w-full font-bold ${
-                    location === "/legend" 
-                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white" 
+                    location === "/legend"
+                      ? "bg-[#3D2B1F] hover:bg-amber-900 text-white"
                       : "text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200"
                   } flex flex-col items-center py-3 h-auto`}
                 >
@@ -195,26 +245,12 @@ export function Navigation() {
                 variant="ghost"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  if (location !== "/how-to-play") {
-                    navigate("/how-to-play#card-guide");
-                  } else {
-                    document.getElementById('card-guide')?.scrollIntoView({ behavior: 'smooth' });
-                    history.replaceState(null, "", "#card-guide");
-                  }
-                }}
-                className="w-full font-bold text-[#3D2B1F] hover:text-amber-900 hover:bg-amber-200 flex flex-col items-center py-3 h-auto"
-              >
-                <span className="font-['Bangers'] text-base">Card Guide</span>
-                <span className="text-sm font-normal">卡牌指南</span>
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
                   if (location !== "/") {
                     navigate("/?scroll=journey");
                   } else {
-                    document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("journey")
+                      ?.scrollIntoView({ behavior: "smooth" });
                     history.replaceState(null, "", "#journey");
                   }
                 }}
@@ -230,7 +266,9 @@ export function Navigation() {
                   if (location !== "/") {
                     navigate("/?scroll=subscribe");
                   } else {
-                    document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+                    document
+                      .getElementById("subscribe")
+                      ?.scrollIntoView({ behavior: "smooth" });
                     history.replaceState(null, "", "#subscribe");
                   }
                 }}
