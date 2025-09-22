@@ -1,4 +1,3 @@
-// Vercel serverless function: POST /api/subscribe
 const readJson = (req) =>
   new Promise((resolve, reject) => {
     let body = "";
@@ -9,8 +8,8 @@ const readJson = (req) =>
     req.on("error", reject);
   });
 
-module.exports = async (req, res) => {
-  // CORS (safe even if same-origin)
+export default async function handler(req, res) {
+  // CORS preflight (safe even if same-origin)
   if (req.method === "OPTIONS") {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -54,7 +53,7 @@ module.exports = async (req, res) => {
     }
 
     return res.status(200).json({ success: true });
-  } catch (err) {
+  } catch {
     return res.status(500).json({ success: false, message: "Server error" });
   }
-};
+}
