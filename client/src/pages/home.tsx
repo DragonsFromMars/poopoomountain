@@ -53,7 +53,8 @@ export function EmailSignupForm({
         setIsSuccess(true);
         toast({
           title: "Success! 💩",
-          description: "🎉 Welcome to the Poo Poo Mountain family! When the chaos begins, we'll notify you right away! 🎉 歡迎加入《噗噗山》大家庭！混亂開始時，我們會第一時間通知你！",
+          description:
+            "🎉 Welcome to the Poo Poo Mountain family! When the chaos begins, we'll notify you right away! 🎉 歡迎加入《噗噗山》大家庭！混亂開始時，我們會第一時間通知你！",
         });
       } else {
         toast({
@@ -102,16 +103,15 @@ export function EmailSignupForm({
           {title}
         </h2>
         <h3 className="text-xl sm:text-2xl lg:text-3xl font-bangers text-amber-700">
-          {source === "form1" 
+          {source === "form1"
             ? "💩 加入噗噗山小隊！"
             : source === "form2"
-            ? "💩 準備好加入噗噗山了嗎？"
-            : source === "legend-page"
-            ? "💩 加入傳說！"
-            : source === "how-to-play-page"
-            ? "💩 加入噗噗山小隊！"
-            : "💩 加入噗噗山小隊！"
-          }
+              ? "💩 準備好加入噗噗山了嗎？"
+              : source === "legend-page"
+                ? "💩 加入傳說！"
+                : source === "how-to-play-page"
+                  ? "💩 加入噗噗山小隊！"
+                  : "💩 加入噗噗山小隊！"}
         </h3>
       </div>
       <p className="mb-4 sm:mb-6 text-poop text-center text-sm sm:text-base leading-relaxed">
@@ -137,18 +137,18 @@ export function EmailSignupForm({
             }
           `}</style>
           {/* Left Arrow - Flowing from book toward form */}
-          <div 
+          <div
             className="absolute left-8 sm:left-12 md:left-16 top-1/2 transform -translate-y-1/2"
             style={{
-              animation: 'arrowFlash 1.5s infinite ease-in-out'
+              animation: "arrowFlash 1.5s infinite ease-in-out",
             }}
           >
-            <img 
+            <img
               src="/cartoon-arrow.webp"
               alt="Arrow pointing to signup"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                transform: 'scaleX(-1) rotate(-45deg)'
+                transform: "scaleX(-1) rotate(-45deg)",
               }}
             />
           </div>
@@ -163,18 +163,18 @@ export function EmailSignupForm({
           </div>
 
           {/* Right Arrow - Flowing from book toward form */}
-          <div 
+          <div
             className="absolute right-8 sm:right-12 md:right-16 top-1/2 transform -translate-y-1/2"
             style={{
-              animation: 'arrowFlash 1.5s infinite ease-in-out 0.5s'
+              animation: "arrowFlash 1.5s infinite ease-in-out 0.5s",
             }}
           >
-            <img 
+            <img
               src="/cartoon-arrow.webp"
               alt="Arrow pointing to signup"
               className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
               style={{
-                transform: 'scaleX(1) rotate(-45deg)'
+                transform: "scaleX(1) rotate(-45deg)",
               }}
             />
           </div>
@@ -265,38 +265,48 @@ export default function Home() {
   useEffect(() => {
     const scrollIfNeeded = () => {
       const params = new URLSearchParams(window.location.search);
-      if (window.location.hash === '#journey' || params.get('scroll') === 'journey') {
-        document.getElementById('journey')?.scrollIntoView({ behavior: 'smooth' });
+      if (
+        window.location.hash === "#journey" ||
+        params.get("scroll") === "journey"
+      ) {
+        document
+          .getElementById("journey")
+          ?.scrollIntoView({ behavior: "smooth" });
         // Clean up query parameter after scrolling
-        if (params.get('scroll') === 'journey') {
+        if (params.get("scroll") === "journey") {
           const url = new URL(window.location.href);
-          url.searchParams.delete('scroll');
-          url.hash = 'journey';
+          url.searchParams.delete("scroll");
+          url.hash = "journey";
           history.replaceState(null, "", url.toString());
         }
-      } else if (window.location.hash === '#subscribe' || params.get('scroll') === 'subscribe') {
-        document.getElementById('subscribe')?.scrollIntoView({ behavior: 'smooth' });
+      } else if (
+        window.location.hash === "#subscribe" ||
+        params.get("scroll") === "subscribe"
+      ) {
+        document
+          .getElementById("subscribe")
+          ?.scrollIntoView({ behavior: "smooth" });
         // Clean up query parameter after scrolling
-        if (params.get('scroll') === 'subscribe') {
+        if (params.get("scroll") === "subscribe") {
           const url = new URL(window.location.href);
-          url.searchParams.delete('scroll');
-          url.hash = 'subscribe';
+          url.searchParams.delete("scroll");
+          url.hash = "subscribe";
           history.replaceState(null, "", url.toString());
         }
       }
     };
-    
+
     const t = setTimeout(scrollIfNeeded, 0); // next tick after mount
     const onHashChange = () => setTimeout(scrollIfNeeded, 0);
     const onPopState = () => setTimeout(scrollIfNeeded, 0);
-    
-    window.addEventListener('hashchange', onHashChange);
-    window.addEventListener('popstate', onPopState);
-    
+
+    window.addEventListener("hashchange", onHashChange);
+    window.addEventListener("popstate", onPopState);
+
     return () => {
       clearTimeout(t);
-      window.removeEventListener('hashchange', onHashChange);
-      window.removeEventListener('popstate', onPopState);
+      window.removeEventListener("hashchange", onHashChange);
+      window.removeEventListener("popstate", onPopState);
     };
   }, []);
 
@@ -305,23 +315,23 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         <div className="flex items-center justify-center gap-4 sm:gap-6 mb-4 sm:mb-6">
-          <img 
-            src="/poo-victory.png" 
-            alt="Poo Character Victory Pose" 
+          <img
+            src="/poo-victory.png"
+            alt="Poo Character Victory Pose"
             className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
           />
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bangers text-[#3D2B1F]">
             Poo Poo Mountain is Coming!
           </h1>
-          <img 
-            src="/victory-toilet-man.png" 
-            alt="Victory Toilet Character" 
+          <img
+            src="/victory-toilet-man.png"
+            alt="Victory Toilet Character"
             className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
           />
         </div>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-poop max-w-4xl mx-auto leading-relaxed">
-          The funniest card game for kids (and adults young at heart).
-          Watch the trailer and sign up below for early bird chaos.
+          The funniest card game for kids (and adults young at heart). Watch the
+          trailer and sign up below for early bird chaos.
         </p>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-amber-900 max-w-4xl mx-auto leading-relaxed">
           最爆笑的卡牌遊戲，專為小朋友（還有童心未泯的大人）打造！
@@ -333,7 +343,7 @@ export default function Home() {
           <div className="relative aspect-video">
             <iframe
               className="w-full h-full rounded-lg shadow-lg border-2 border-poop/20 object-contain"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/ekJBcGl_liw?si=Dw4p70Qa1Gse7neg"
               title="Poo Poo Mountain Trailer"
               frameBorder="0"
               allowFullScreen
@@ -363,13 +373,16 @@ export default function Home() {
       </section>
 
       {/* Launch Timeline Section */}
-      <section id="journey" className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-beige">
+      <section
+        id="journey"
+        className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-beige"
+      >
         <div className="max-w-6xl mx-auto">
           {/* Sailing Image */}
           <div className="flex justify-center mb-8 sm:mb-12">
-            <img 
-              src="/sailing-optimized.webp" 
-              alt="Poo and Toilet characters sailing to Poo Poo Mountain" 
+            <img
+              src="/sailing-optimized.webp"
+              alt="Poo and Toilet characters sailing to Poo Poo Mountain"
               className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-contain"
             />
           </div>
