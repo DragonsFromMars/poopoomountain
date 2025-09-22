@@ -33,6 +33,10 @@ async function sendWelcomeEmail(email: string) {
               <p style="color: #5c3a1a; font-size: 1.2em;">🎉 Hey, future Poo Poo Mountain legend!</p>
               <p style="color: #7a6b5f; font-size: 1em; margin-bottom: 20px;">🎉 嘿，未來的噗噗山傳奇！</p>
               
+              <p style="color: #5c3a1a;">🎨 Your free printable coloring book (PDF):</p>
+              <p style="color: #7a6b5f;">🎨 你的免費可列印著色本（PDF):</p>
+              <p style="color: #5c3a1a; margin-bottom: 20px;"><a href="https://www.PooPooMountain.com/PooPooMountainColoringBook.pdf" style="color: #b88c4c; text-decoration: none;">https://www.PooPooMountain.com/PooPooMountainColoringBook.pdf</a></p>
+              
               <p style="color: #5c3a1a;">Thanks for joining our squad! You'll be the first to know when:</p>
               <p style="color: #7a6b5f; margin-bottom: 15px;">感謝加入我們的隊伍！你將第一時間知道：</p>
               
