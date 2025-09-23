@@ -383,7 +383,7 @@ export default function Home() {
             <img
               src="/sailing-optimized.webp"
               alt="Poo and Toilet characters sailing to Poo Poo Mountain"
-              className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-contain"
+              className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
             />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bangers text-center mb-12 sm:mb-16 text-[#3D2B1F]">
@@ -507,8 +507,8 @@ export default function Home() {
         {/* Poo and Toilet Friends Image */}
         <div id="subscribe" className="flex justify-center mb-8 sm:mb-12">
           <img
-            src="/poo-toilet-friends-optimized.webp"
-            alt="Poo and Toilet Characters - Best Friends Forever"
+            src="/signup-characters-optimized.webp"
+            alt="Poo and Toilet Characters - Ready to Sign Up!"
             className="w-64 sm:w-80 md:w-96 lg:w-[400px] h-auto object-contain drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 transform hover:scale-105"
           />
         </div>
