@@ -592,16 +592,16 @@ export default function HowToPlayPage() {
                   <div className="bg-amber-200 border-2 border-amber-900 rounded-lg p-2 text-center">
                     <img
                       src="/uploads/how-to-play/Taco Twosday-3 cards.png"
-                      alt="Taco Tuesday Card"
+                      alt="Taco Twosday Card"
                       className="w-full h-48 object-contain rounded-md mb-2"
                     />
                     <p className="text-sm text-amber-600 font-bold">
-                      Taco Tuesday Card - X3
+                      Taco Twosday Card - X3
                     </p>
                   </div>
                   <div className="md:col-span-2">
                     <h3 className="text-2xl lg:text-3xl font-bold text-amber-900 mb-1 font-['Bangers']">
-                      🌮 Taco Tuesday
+                      🌮 Taco Twosday
                     </h3>
                     <h4 className="text-lg lg:text-xl font-bold text-amber-900 mb-3 font-['Bangers']">
                       墨西哥餅星期二

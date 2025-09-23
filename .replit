@@ -3,7 +3,7 @@ run = "npm run dev"
 
 [nix]
 channel = "stable-25_05"
-packages = ["imagemagick", "pngquant"]
+packages = ["imagemagick", "pngquant", "fetchutils"]
 
 [deployment]
 run = ["sh", "-c", "npm run dev"]
