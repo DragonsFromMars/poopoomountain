@@ -12,10 +12,33 @@ brevoApiInstance.setApiKey(0, process.env.BREVO_API_KEY || '');
 const transactionalEmailsApi = new TransactionalEmailsApi();
 transactionalEmailsApi.setApiKey(0, process.env.BREVO_API_KEY || '');
 
-// Welcome email function
+// Welcome email function using Brevo template
 async function sendWelcomeEmail(email: string) {
   try {
-    await transactionalEmailsApi.sendTransacEmail({
+    // Debug logging for production troubleshooting
+    console.log('Sending welcome email to:', email);
+    console.log('Environment check:', {
+      brevo_api_key: process.env.BREVO_API_KEY ? 'SET' : 'MISSING',
+      sender_email: process.env.BREVO_SENDER_EMAIL ? 'SET' : 'MISSING',
+      template_id: process.env.BREVO_WELCOME_TEMPLATE_ID ? 'SET' : 'MISSING'
+    });
+
+    // Validate required environment variables
+    if (!process.env.BREVO_API_KEY) {
+      throw new Error('BREVO_API_KEY environment variable is not set');
+    }
+    
+    if (!process.env.BREVO_WELCOME_TEMPLATE_ID) {
+      throw new Error('BREVO_WELCOME_TEMPLATE_ID environment variable is not set');
+    }
+
+    const templateId = parseInt(process.env.BREVO_WELCOME_TEMPLATE_ID);
+    if (isNaN(templateId)) {
+      throw new Error('BREVO_WELCOME_TEMPLATE_ID must be a valid number');
+    }
+
+    // Send email using Brevo template
+    const response = await transactionalEmailsApi.sendTransacEmail({
       sender: {
         email: process.env.BREVO_SENDER_EMAIL || 'noreply@poopoomountain.com',
         name: 'Poo Poo Mountain Team'
@@ -23,50 +46,24 @@ async function sendWelcomeEmail(email: string) {
       to: [{
         email: email
       }],
-      subject: '💩 Welcome to the Poo Poo Mountain Squad!',
-      htmlContent: `
-        <html>
-          <body style="font-family: Arial, sans-serif; background-color: #fdf6ec; padding: 20px;">
-            <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px;">
-              <h1 style="color: #5c3a1a; text-align: center; font-size: 2.5em;">💩 Welcome to Poo Poo Mountain!</h1>
-              
-              <p style="color: #5c3a1a; font-size: 1.2em;">🎉 Hey, future Poo Poo Mountain legend!</p>
-              <p style="color: #7a6b5f; font-size: 1em; margin-bottom: 20px;">🎉 嘿，未來的噗噗山傳奇！</p>
-              
-              <p style="color: #5c3a1a;">🎨 Your free printable coloring book (PDF):</p>
-              <p style="color: #7a6b5f;">🎨 你的免費可列印著色本（PDF):</p>
-              <p style="color: #5c3a1a; margin-bottom: 20px;"><a href="https://www.PooPooMountain.com/PooPooMountainColoringBook.pdf" style="color: #b88c4c; text-decoration: none;">https://www.PooPooMountain.com/PooPooMountainColoringBook.pdf</a></p>
-              
-              <p style="color: #5c3a1a;">Thanks for joining our squad! You'll be the first to know when:</p>
-              <p style="color: #7a6b5f; margin-bottom: 15px;">感謝加入我們的隊伍！你將第一時間知道：</p>
-              
-              <ul style="color: #5c3a1a;">
-                <li>🚀 Our crowdfunding campaign launches</li>
-                <li>🎮 The game is ready to play</li>
-                <li>🎁 Exclusive perks and updates drop</li>
-                <li>💩 More ridiculous content gets released</li>
-              </ul>
-              <ul style="color: #7a6b5f; margin-bottom: 20px;">
-                <li>🚀 我們的群眾募資活動開跑</li>
-                <li>🎮 遊戲正式開玩</li>
-                <li>🎁 獨家好康與最新消息登場</li>
-                <li>💩 更多爆笑荒謬的內容釋出</li>
-              </ul>
-              
-              <p style="color: #5c3a1a;">Get ready for the funniest card game experience ever created!</p>
-              <p style="color: #7a6b5f; margin-bottom: 20px;">準備好迎接史上最爆笑的卡牌遊戲體驗吧！</p>
-              
-              <div style="text-align: center; margin-top: 30px;">
-                <p style="color: #b88c4c; font-size: 0.9em;">The Poo Poo Mountain Team</p>
-                <p style="color: #b88c4c; font-size: 0.9em;">噗噗山團隊</p>
-              </div>
-            </div>
-          </body>
-        </html>
-      `
+      templateId: templateId,
+      params: {
+        // Optional: Add dynamic variables if your template uses them
+        // These will be available as {{ params.variableName }} in your Brevo template
+        downloadLink: 'https://www.PooPooMountain.com/PooPooMountainColoringBook.pdf',
+        userName: 'Future Legend'
+      }
     });
-  } catch (error) {
+
+    console.log('Welcome email sent successfully:', response.body?.messageId || 'Email sent');
+    
+  } catch (error: any) {
     console.error('Error sending welcome email:', error);
+    console.error('Error details:', {
+      message: error?.message || 'Unknown error',
+      status: error?.status,
+      body: error?.body
+    });
     // Don't fail the subscription if email sending fails
   }
 }
