@@ -533,6 +533,40 @@ export default function Home() {
         <p className="text-sm sm:text-base text-amber-900">
           最臭名昭著的卡牌遊戲。
         </p>
+        
+        {/* Social Media Section */}
+        <div className="mt-4 mb-4">
+          <p className="text-sm sm:text-base mb-3">
+            Follow us on Social Media - 追蹤我們的社群
+          </p>
+          <div className="flex justify-center space-x-6">
+            <a 
+              href="https://www.tiktok.com/@poopoomountaingame" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-75 transition-opacity"
+            >
+              <img src="/tiktok-icon.webp" alt="TikTok" className="w-8 h-8 sm:w-10 sm:h-10" />
+            </a>
+            <a 
+              href="https://www.instagram.com/poopoomountain/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-75 transition-opacity"
+            >
+              <img src="/instagram-icon.webp" alt="Instagram" className="w-8 h-8 sm:w-10 sm:h-10" />
+            </a>
+            <a 
+              href="https://www.youtube.com/@PooPooMountain" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-75 transition-opacity"
+            >
+              <img src="/youtube-icon.webp" alt="YouTube" className="w-8 h-8 sm:w-10 sm:h-10" />
+            </a>
+          </div>
+        </div>
+        
         <p className="text-xs sm:text-sm mt-4 opacity-70">
           © 2025 Poo Poo Mountain. All rights reserved. No actual poop
           involved.
